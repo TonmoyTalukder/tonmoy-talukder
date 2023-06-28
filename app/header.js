@@ -60,11 +60,11 @@ const Navigation = () => {
         {/* Dropdown Menu */}
         {isOpen && (
           <div className="absolute right-0 mt-8 py-2 w-48 bg-white rounded-md shadow-lg">
-            <a href="/" className="block px-4 py-2 text-gray-900 hover:bg-gray-200">Home</a>
-            <a href="/about" className="block px-4 py-2 text-gray-900 hover:bg-gray-200">Recent</a>
-            <a href="/contact" className="block px-4 py-2 text-gray-900 hover:bg-gray-200">Research</a>
-            <a href="/contact" className="block px-4 py-2 text-gray-900 hover:bg-gray-200">Info</a>
-            <a href="/contact" className="block px-4 py-2 text-gray-900 hover:bg-gray-200">Resume</a>
+            <a href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</a>
+            <a href="/#recent" className="text-gray-900 hover:text-orange-400 ml-4">Recent</a>
+            <a href="/#research" className="text-gray-900 hover:text-orange-400 ml-4">Research</a>
+            <a href="/#info" className="text-gray-900 hover:text-orange-400 ml-4">Info</a>
+            <a href="https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view" target="_blank" className="text-gray-900 hover:text-orange-400 ml-4">Resume</a>
           </div>
         )}
       </div>

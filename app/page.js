@@ -14,7 +14,13 @@ export default function Home() {
         <div class="col-span-4 h-screen border">01</div>
         <div class="col-span-8 h-screen border">02</div>
       </div> */}
+{/* <div class="fixed top-0 left-0 right-0">
 
+</div> */}
+{/* <br></br>
+<br></br>
+<br></br>
+<br></br> */}
 <div style={{height: "40px"}} class="bg-gray-50 mb-5">
     <span class="text-right">
       <Header/>
