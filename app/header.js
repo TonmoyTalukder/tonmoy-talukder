@@ -59,8 +59,8 @@ const Navigation = () => {
 
         {/* Dropdown Menu */}
         {isOpen && (
-          <div className="absolute right-0 mt-8 py-2 w-48 bg-white rounded-md shadow-lg">
-            <ul>
+          <div className="absolute right-0 mt-8 py-2 w-48 bg-white rounded-md shadow-lg pr-4">
+            <ul> 
               
             <li><a href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</a></li>
             <li><a href="/#recent" className="text-gray-900 hover:text-orange-400 ml-4">Recent</a></li>
