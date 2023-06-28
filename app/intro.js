@@ -31,7 +31,7 @@ const Intro = () => {
       I have pursed Bachelor of Science degree in Computer Science and Engineering at Ahsanullah University of Science and Technology.
     <br></br>
     <br></br>
-      I am currently doing research in Machine Learning under my undergrad supervisor <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank">G. M. Shahariar Shibli</a></span>, faculty of the Computer Science and Engineering department of Ahsanullah University of Science and Technology, focusing on Natural Language Processing, Computer Vision and Multimodal Deep Learning research.
+      I am currently doing research in Machine Learning under my undergrad supervisor <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank">G. M. Shahariar Shibli</a></span>, faculty of the Department of Computer Science and Engineering of Ahsanullah University of Science and Technology, focusing on Natural Language Processing, Computer Vision and Multimodal Deep Learning research.
       <br></br>
       <br></br>
       I have a keen interest in various research areas, including  <span class="text-sky-600">Multimodal Deep Learning</span>, <span class="text-sky-600">Natural Language Processing</span>, <span class="text-sky-600">Computer Vision</span>, <span class="text-sky-600">Human-Computer Interaction</span>, and <span class="text-sky-600">Machine Learning</span>.
