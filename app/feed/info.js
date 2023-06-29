@@ -41,7 +41,7 @@ const Info = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="font-semibold">📧 Email: </span>
-                    <span class="text-orange-600"><a href="mailto:example@example.com">tonmoytalukder [dot] cs [at] gmail [dot] com</a></span></p>
+                    <span class="text-orange-600"><a href="mailto:tonmoytalukder.cs@gmail.com">tonmoytalukder [dot] cs [at] gmail [dot] com</a></span></p>
                     </li>
                     <li>
                     <p><span class="font-semibold">🌍 Live in: </span>
