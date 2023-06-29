@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 
 const Myresume = () => {
-    const [pdfUrl] = useState('https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view');
+    const pdfUrl = 'Resume of Tonmoy Talukder.pdf';
 
     const handleDownload = () => {
         window.open(pdfUrl, '_blank');
@@ -12,13 +12,13 @@ const Myresume = () => {
     
     <div id="recent" class="mt-3">
 
-        <h2 class="text-xl font-semibold">Accomplishments</h2>
+        <h2 class="text-xl font-semibold">Professional Statement</h2>
         <hr/>
         <hr/>
         <br></br> 
         <div>
             <p>
-            I have successfully earned my Bachelor`&apos`s degree in Computer Science and Engineering and am currently engaged in research work under the guidance of my undergraduate supervisor, Mr.Mr. <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank">G. M. Shahariar Shibli</a></span>, faculty of the <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/cse" target="_blank">Department of Computer Science and Engineering</a></span> of Ahsanullah University of Science and Technology.
+            I am a driven individual seeking opportunities in machine learning and data science, aiming to utilize my programming and analytical skills for impactful research. Resourceful, creative, and adaptable, I thrive in dynamic environments. With a passion for technology and problem-solving, I am eager to contribute to collaborative projects and continuously expand my knowledge. Quick to learn, I am dedicated to advancing professionally in the vast field of machine learning. Committed to innovation and growth, I bring a strong foundation in theory and practice. I am excited to connect and contribute to making a difference in the world of machine learning and data science.
             </p>
         </div>
         <br></br>    
@@ -29,8 +29,12 @@ const Myresume = () => {
         <hr/>
         <hr/>
         <div>
-            <embed src={pdfUrl} width="100%" height="600px" type="application/pdf" />
-            <button onClick={handleDownload}>Download PDF</button>
+            <br></br>
+            <button onClick={handleDownload} class="download-button">⬇️ Download My Resume</button>
+            <br></br>
+            <br></br>
+            <iframe src={pdfUrl} width="100%" height="600px" />
+
         </div>
         <hr/>
 

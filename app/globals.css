@@ -37,12 +37,101 @@
   display: none; /* Hide the scrollbar for Chrome, Safari, and Opera */
 }
 
+.download-button {
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: 2px solid #F97316;
+  background-color: transparent;
+  color: #F97316;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #f57c0b;
+  color: #ffffff;
+  border-color: #f57c0b;
+}
+
+.social-icons-wrapper {
+  display: flex;
+}
+
+.social-icons-wrapper2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.github-icon,
+.huggingface-icon{
+  color: #000; /* Adjust color as needed */
+  font-size: 24px;
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.social-name {
+  font-size: 16px; /* Adjust as needed */
+}
+
+.linkedin-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-icon,
+.twitter-icon {
+  color: #0077b5; /* LinkedIn blue */
+  font-size: 24px;
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.linkedin-name {
+  font-size: 16px; /* Adjust as needed */
+}
+
+.blogger-icon{
+  color: #fd9a3d; /* Adjust color as needed */
+  font-size: 24px;
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.medium-icon {
+  color: #000; /* Adjust color as needed */
+  font-size: 24px;
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.mail-icon {
+  color: #000; /* Adjust color as needed */
+  font-size: 24px;
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.text-special{
+  text-align: right!important;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
   .header-special{
     display: none;
+  }
+  .social-icons-wrapper2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .text-special{
+    text-align: left!important;
   }
 }
 

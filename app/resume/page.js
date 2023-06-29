@@ -19,7 +19,7 @@ export default function Home() {
       <Intro/>
     </div>
     <div style={{height: "760px"}} class="col-span-7 mx-3 scroll-content">
-      {/* <Myresume/> */}
+      <Myresume/>
       <br></br>
     </div>
   </div>
