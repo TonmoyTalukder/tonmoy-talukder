@@ -1,12 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
-import Intro from './intro'
-import Recent from './feed/recent'
-import Publications from './feed/publication'
-import Info from './feed/info'
-import Projects from './feed/project'
-import Footer from './footer'
-import Header from './header'
+import Intro from '../intro'
+import Footer from '../footer'
+import Header from '../header'
+import Allinfos from './allinfos'
 
 export default function Home() {
   return (
@@ -34,13 +30,8 @@ export default function Home() {
       <Intro/>
     </div>
     <div style={{height: "760px"}} class="col-span-7 mx-3 scroll-content">
-      <Recent/>
+      <Allinfos/>
       <br></br>
-      <Publications/>
-      <br></br>
-      <Projects/>
-      <br></br>
-      <Info/>
     </div>
   </div>
 </div>

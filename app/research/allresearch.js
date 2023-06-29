@@ -1,9 +1,22 @@
 import React from 'react';
 
-const Publications = () => {
+const Research = () => {
   return (
     
     <div id="research" class="mt-3">
+
+        <h2 class="text-xl font-semibold">Research Quest</h2>
+        <hr/>
+        <hr/>
+        <br></br> 
+        <div>
+            <p>
+            Communicating with the data to contribute to the field of Data Science, Machine Learning, Deep learning and Artificial intelligence for mankind is my pre-eminent ambition.
+            </p>
+        </div>
+        <br></br>    
+        <hr/>
+        <br></br>
 
         <h2 class="text-xl font-semibold">RESEARCH & PUBLICATIONS</h2>
         <hr/>
@@ -32,12 +45,27 @@ const Publications = () => {
                     </li>
                     <li>
                         <p> 
+                            <span class="text-amber-700">🔨 Bangla Key2Text V2: Bengali Text Generation from Stemmed Keywords</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p> 
                             <span class="text-amber-700">🔨 Vision2Cap: Bengali Caption Generation from Images using Pre-trained Transformer</span>
                         </p>
                     </li>
                     <li>
                         <p> 
                             <span class="text-amber-700">🔨 Cross Lingual Key2Text: Bengali Text Generation from Multi-Lingual Keywords</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p> 
+                            <span class="text-amber-700">🔨 Multimodal Image and Text Classification using Pre-trained Transformers on LAION-400-MILLION OPEN DATASET</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p> 
+                            <span class="text-amber-700">🔨 Bangla Hate Speech Classification using Pre-Trained Transformers on a Benchmark Dataset</span>
                         </p>
                     </li>
                 </ul>
@@ -49,4 +77,4 @@ const Publications = () => {
   );
 };
 
-export default Publications;
+export default Research;

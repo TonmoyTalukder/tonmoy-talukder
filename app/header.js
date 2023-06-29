@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link'
 import { useState } from 'react';
 
 const Navigation = () => {
@@ -13,11 +13,12 @@ const Navigation = () => {
     <nav className="p-4 bg-gray-50 flex justify-end">
       {/* Navigation Links for Large Screens */}
       <div className="hidden md:flex md:items-center">
-        <a href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</a>
-        <a href="/#recent" className="text-gray-900 hover:text-orange-400 ml-4">Recent</a>
-        <a href="/#research" className="text-gray-900 hover:text-orange-400 ml-4">Research</a>
-        <a href="/#info" className="text-gray-900 hover:text-orange-400 ml-4">Info</a>
-        <a href="https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view" target="_blank" className="text-gray-900 hover:text-orange-400 ml-4">Resume</a>
+        <Link href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</Link>
+        <Link href="/recent-highlights" className="text-gray-900 hover:text-orange-400 ml-4">Recent</Link>
+        <Link href="/research" className="text-gray-900 hover:text-orange-400 ml-4">Research</Link>
+        <Link href="/projects" className="text-gray-900 hover:text-orange-400 ml-4">Project</Link>
+        <Link href="/infos" className="text-gray-900 hover:text-orange-400 ml-4">Info</Link>
+        <Link href="/resume" className="text-gray-900 hover:text-orange-400 ml-4">Resume</Link>
       </div>
 
       {/* Toggle Button for Small Screens */}
@@ -62,11 +63,12 @@ const Navigation = () => {
           <div className="absolute right-0 mt-8 py-2 w-48 bg-white rounded-md shadow-lg pr-4">
             <ul> 
               
-            <li><a href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</a></li>
-            <li><a href="/#recent" className="text-gray-900 hover:text-orange-400 ml-4">Recent</a></li>
-            <li><a href="/#research" className="text-gray-900 hover:text-orange-400 ml-4">Research</a></li>
-            <li><a href="/#info" className="text-gray-900 hover:text-orange-400 ml-4">Info</a></li>
-            <li><a href="https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view" target="_blank" className="text-gray-900 hover:text-orange-400 ml-4">Resume</a></li>
+            <li><Link href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</Link></li>
+            <li><Link href="/recent-highlights" className="text-gray-900 hover:text-orange-400 ml-4">Recent</Link></li>
+            <li><Link href="/research" className="text-gray-900 hover:text-orange-400 ml-4">Research</Link></li>
+            <li><Link href="/projects" className="text-gray-900 hover:text-orange-400 ml-4">Project</Link></li>
+            <li><Link href="/infos" className="text-gray-900 hover:text-orange-400 ml-4">Info</Link></li>
+            <li><Link href="https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view" target="_blank" className="text-gray-900 hover:text-orange-400 ml-4">Resume</Link></li>
             </ul>
           </div>
         )}
