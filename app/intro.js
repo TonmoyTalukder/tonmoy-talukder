@@ -10,6 +10,11 @@ const Intro = () => {
     // </div>
     <div class="container mx-auto flex justify-center">
   <div class="w-full md:w-50">
+      <div class="bg-gray-200 rounded-md p-2">
+        <p>&#34;Programming isn&#39;t about what you know, it&#39;s about what you can figure out.&#34;</p>
+      <p class="text-right">—Chris Pine, Learn to Program</p>
+      </div>
+      <br></br>
     <div class="mt-2">
       <h1 class="text-2xl font-bold text-center">Tonmoy Talukder</h1> <br></br>
       {/* <Image src="https://i.ibb.co/X7QwZ6Y/Tonmoy-Talukder.jpg" class="h-60 w-60 rounded-full mx-auto" 
