@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="social-icons-wrapper2">
             <div className="social-icon">
                 <FaEnvelope className="mail-icon" />
-            <span className="social-name">Mail</span>
+                <span className="social-name"><span className="social-name text-orange-600 hover:text-orange-400"><a href="mailto:tonmoytalukder.cs@gmail.com" target="_blank">Write E-Mail</a></span></span>
       </div>
         <div/>
     </div>
