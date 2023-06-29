@@ -49,7 +49,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [March, 2022]</span> <span class="text-sky-600">BookPedia Prototype - A Social Media (React + ASP.NET Framework Project)</span></p>
-                    <p><span class="font-semibold">Description: </span>BookPedia is a social media for the literary and academia personals. In this platform everyone can upload book and blogs and give rating them. It's just a prototype version as a university software development lab project. We are developing it in large scale. <br></br>
+                    <p><span class="font-semibold">Description: </span>BookPedia is a social media for the literary and academia personals. In this platform everyone can upload book and blogs and give rating them. It&apos;s just a prototype version as a university software development lab project. We are developing it in large scale. <br></br>
                     <b>Frontend:</b> JavaScript, React JS, Material UI <br></br>
                     <b>Backend:</b> C#, ASP.NET Framework <br></br>
                     <b>Database:</b> Entity Framework </p>

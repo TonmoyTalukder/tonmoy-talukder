@@ -32,7 +32,7 @@ const Allinfos = () => {
                     <p><span class="font-semibold">💼 Technovation</span> <br></br>
                     <span class="text-slate-800">Mentor</span> (<span class="text-sky-400">December, 2021-</span>)</p>
                     <p>
-                    Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world`&apos;`s largest and longest running tech competition for girls. My responsibilitie is mentoring students for their projects. <br></br>
+                    Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls. My responsibilitie is mentoring students for their projects. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer
                     </p>
                     </li>
@@ -52,8 +52,8 @@ const Allinfos = () => {
                 <br></br>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p><span class="font-semibold">💼 Bangladesh Boy's Scout</span> <br></br>
-                    <span class="text-slate-800">Boy's Scout (National)</span> (<span class="text-sky-400">October, 2012 - December, 2012</span>)</p>
+                    <p><span class="font-semibold">💼 Bangladesh Boy&#39;s Scout</span> <br></br>
+                    <span class="text-slate-800">Boy&apos;s Scout (National)</span> (<span class="text-sky-400">October, 2012 - December, 2012</span>)</p>
                     <p>
                     Member of Kalmakanda Government Pilot High School Scout Team for National Camps. Kalmakanda, Netrakona, Mymensingh 2430. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer

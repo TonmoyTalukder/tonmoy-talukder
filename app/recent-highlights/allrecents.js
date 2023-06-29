@@ -11,7 +11,7 @@ const Allrecent = () => {
         <br></br> 
         <div>
             <p>
-            I have successfully earned my Bachelor's degree in Computer Science and Engineering and am currently engaged in research work under the guidance of my undergraduate supervisor, Mr.Mr. <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank">G. M. Shahariar Shibli</a></span>, faculty of the <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/cse" target="_blank">Department of Computer Science and Engineering</a></span> of Ahsanullah University of Science and Technology.
+            I have successfully earned my Bachelor&apos;s degree in Computer Science and Engineering and am currently engaged in research work under the guidance of my undergraduate supervisor, Mr.Mr. <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank">G. M. Shahariar Shibli</a></span>, faculty of the <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/cse" target="_blank">Department of Computer Science and Engineering</a></span> of Ahsanullah University of Science and Technology.
             </p>
         </div>
         <br></br>    
