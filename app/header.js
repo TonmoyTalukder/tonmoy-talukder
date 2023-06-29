@@ -9,7 +9,6 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
-  
   return (
     <nav className="p-4 bg-gray-50 flex justify-end">
       {/* Navigation Links for Large Screens */}
