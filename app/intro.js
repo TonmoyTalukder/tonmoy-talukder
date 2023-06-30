@@ -30,13 +30,14 @@ const Intro = () => {
       />
       <br></br>
       <p class="text-center">
+        {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <span class="text-center text-orange-600 hover:text-orange-400"><a href="https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view" target="_blank">Resume</a></span> | <span class="text-center text-orange-600 hover:text-orange-400"><a href="https://www.linkedin.com/in/tonmoytalukder/" target="_blank">LinekdIn</a></span> | <span class="text-center text-orange-600 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder" target="_blank">GitHub</a></span> | <span class="text-center text-orange-600 hover:text-orange-400"><a href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&hl=en" target="_blank">Google Scholar</a></span>
       </p>
       <p class="text-justify">
-      I have pursed Bachelor of Science degree in Computer Science and Engineering at <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/" target="_blank">Ahsanullah University of Science and Technology</a></span>.
+      I have pursed Bachelor of Science degree in Computer Science and Engineering at <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/" target="_blank" rel="noreferrer">Ahsanullah University of Science and Technology</a></span>.
     <br></br>
     <br></br>
-      I am currently doing research in Machine Learning under my undergrad supervisor Mr. <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank">G. M. Shahariar Shibli</a></span>, faculty of the <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/cse" target="_blank">Department of Computer Science and Engineering</a></span> of Ahsanullah University of Science and Technology, focusing on Natural Language Processing, Computer Vision and Multimodal Deep Learning research.
+      I am currently doing research in Machine Learning under my undergrad supervisor Mr. <span class="text-orange-600 hover:text-orange-400"><a href="https://shahariar-shibli.github.io/" target="_blank" rel="noreferrer">G. M. Shahariar Shibli</a></span>, faculty of the <span class="text-orange-600 hover:text-orange-400"><a href="https://www.aust.edu/cse" target="_blank" rel="noreferrer">Department of Computer Science and Engineering</a></span> of Ahsanullah University of Science and Technology, focusing on Natural Language Processing, Computer Vision and Multimodal Deep Learning research.
       <br></br>
       <br></br>
       I have a keen interest in various research areas, including  <span class="text-sky-600">Multimodal Deep Learning</span>, <span class="text-sky-600">Natural Language Processing</span>, <span class="text-sky-600">Computer Vision</span>, <span class="text-sky-600">Human-Computer Interaction</span>, and <span class="text-sky-600">Machine Learning</span>.
