@@ -29,7 +29,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [February, 2023]</span> <span class="text-sky-600">Bangla-KeywordExtractor</span></p>
-                    <p><span class="font-semibold">Description: </span>BanglaBERT based keywords extractor of Bangla Sentences. This extractor works calculating cosine similarity of each word embedding with the mean embedding.</p>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>BanglaBERT based keywords extractor of Bangla Sentences. This extractor works calculating cosine similarity of each word embedding with the mean embedding.</p>
                     <p>[<span class="text-sky-400 hover:text-orange-400"><a href="#">PyPl</a></span>] [<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Bangla-KeywordExtractor">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>     
@@ -37,7 +37,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [January, 2023]</span> <span class="text-sky-600">Bengali Hate Speech Classification</span></p>
-                    <p><span class="font-semibold">Description: </span>NLP Classification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>NLP Classification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
                     <p>[<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-Classification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>         
@@ -45,7 +45,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [October, 2022]</span> <span class="text-sky-600">Diabetes Prediction Analysis</span></p>
-                    <p><span class="font-semibold">Description: </span>Analysis on Pima Indian Diabetes dataset. Applied sSeven algorithms with hyperparameter fine tuning, Ensemble approaches. </p>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>Analysis on Pima Indian Diabetes dataset. Applied seven algorithms with hyperparameter fine tuning, Ensemble approaches. </p>
                     <p>[<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/An-Empirical-Study-of-the-Efficacy-among-multiple-MachineLearning-Algorithms-for-Diabetes-Prediction">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>           
@@ -53,7 +53,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [March, 2022]</span> <span class="text-sky-600">BookPedia Prototype - A Social Media (React + ASP.NET Framework Project)</span></p>
-                    <p><span class="font-semibold">Description: </span>BookPedia is a social media for the literary and academia personals. In this platform everyone can upload book and blogs and give rating them. It&apos;s just a prototype version as a university software development lab project. We are developing it in large scale. <br></br>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>BookPedia is a social media for the literary and academia personals. In this platform everyone can upload book and blogs and give rating them. It&apos;s just a prototype version as a university software development lab project.<br></br>
                     <b>Frontend:</b> JavaScript, React JS, Material UI <br></br>
                     <b>Backend:</b> C#, ASP.NET Framework <br></br>
                     <b>Database:</b> Entity Framework </p>
@@ -64,7 +64,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [November, 2021]</span> <span class="text-sky-600">Niche Product MERN Stack Web Application: The Niketan</span></p>
-                    <p><span class="font-semibold">Description: </span>Material UI based on this project’s key feature is Admin Panel with Admin Route. Admin can add more admin, can delete and add products, can delete or process bookings. Another feature is Dashboard which appears after login. For Admin and Users, there are different dashboards in the same route. From the dashboard, users can book products, user can modify bookings, and so on. <br></br>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>Material UI based on this project’s key feature is Admin Panel with Admin Route. Admin can add more admin, can delete and add products, can delete or process bookings. Another feature is Dashboard which appears after login. For Admin and Users, there are different dashboards in the same route. From the dashboard, users can book products, user can modify bookings, and so on. <br></br>
                     <b>Frontend:</b> React JS, React Router, Material UI, Firebase Authentication <br></br>
                     <b>Backend:</b> Node JS, Express JS, JWT Token<br></br>
                     <b>Database:</b> MongoDB </p>
@@ -75,7 +75,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [October, 2021]</span> <span class="text-sky-600">Churning Telecom Company Prediction</span></p>
-                    <p><span class="font-semibold">Description: </span>Applied One-hot Encoding, Decision Tree Classification, Grid Search & Cross-Validation, Confusion Matrix, Classification report, and ROC-AUC.</p>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>Applied One-hot Encoding, Decision Tree Classification, Grid Search & Cross-Validation, Confusion Matrix, Classification report, and ROC-AUC.</p>
                     <p>[<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Churning-Telecom-Company-Prediction">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>
@@ -83,7 +83,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [November, 2021]</span> <span class="text-sky-600">MERN Stack Tourism Web Application: The Wayfarers</span></p>
-                    <p><span class="font-semibold">Description: </span>Bootstrap-based this Project’s Key feature is Admin Dashboard. Admin can add products, and modify users’ booking. Another feature is, users can book products from the booking page and can modify from my booking and Offcanvas page, and the result would happen in real-time from the database.<br></br>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>Bootstrap-based this Project’s Key feature is Admin Dashboard. Admin can add products, and modify users’ booking. Another feature is, users can book products from the booking page and can modify from my booking and Offcanvas page, and the result would happen in real-time from the database.<br></br>
                     <b>Frontend:</b> React JS, React Router, Bootstrap, Firebase Authentication<br></br>
                     <b>Backend:</b> Node JS, Express JS<br></br>
                     <b>Database:</b> MongoDB</p>
@@ -94,7 +94,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [August, 2021]</span> <span class="text-sky-600">Test cricket analysis</span></p>
-                    <p><span class="font-semibold">Description: </span>Explored joining, data aggregation, filtering using Pandas and Numpy.</p>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>Explored joining, data aggregation, filtering using Pandas and Numpy.</p>
                     <p>[<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/test_cricket_analysis">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>   
@@ -102,7 +102,7 @@ const Allprojects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="text-sm font-semibold">💻 [July, 2021]</span> <span class="text-sky-600">Audi used car EDA</span></p>
-                    <p><span class="font-semibold">Description: </span>An overview on a dataset of AUDI Cars. Analysis of the data set with comparing different columns with each other, using Histogram, Scatterplot, Distribution, ECDF, Barplot, Violin plot along with proper naming and plot analysis.</p>
+                    <p class="text-justify"><span class="font-semibold">Description: </span>An overview on a dataset of AUDI Cars. Analysis of the data set with comparing different columns with each other, using Histogram, Scatterplot, Distribution, ECDF, Barplot, Violin plot along with proper naming and plot analysis.</p>
                     <p>[<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/audi_used_car_EDA">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>   

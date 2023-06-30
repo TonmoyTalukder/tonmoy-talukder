@@ -31,7 +31,7 @@ const Allinfos = () => {
                     <li>
                     <p><span class="font-semibold">💼 Technovation</span> <br></br>
                     <span class="text-slate-800">Mentor</span> (<span class="text-sky-400">December, 2021-</span>)</p>
-                    <p>
+                    <p class="text-justify">
                     Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls. My responsibilitie is mentoring students for their projects. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer
                     </p>
@@ -43,7 +43,7 @@ const Allinfos = () => {
                     <p><span class="font-semibold">💼 Pushpa Child Forum</span> <br></br>
                     <span class="text-slate-800">President</span> (<span class="text-sky-400">October, 2013 - October, 2016</span>)<br></br>
                     <span class="text-slate-800">Member</span> (<span class="text-sky-400">2007 - September, 2013</span>)</p>
-                    <p>
+                    <p class="text-justify">
                     Children Organization of World Vision Bangladesh Kalmakanda ADP of Netrakona, Mymensingh 2430. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer
                     </p>
@@ -54,7 +54,7 @@ const Allinfos = () => {
                     <li>
                     <p><span class="font-semibold">💼 Bangladesh Boy&#39;s Scout</span> <br></br>
                     <span class="text-slate-800">Boy&apos;s Scout (National)</span> (<span class="text-sky-400">October, 2012 - December, 2012</span>)</p>
-                    <p>
+                    <p class="text-justify">
                     Member of Kalmakanda Government Pilot High School Scout Team for National Camps. Kalmakanda, Netrakona, Mymensingh 2430. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer
                     </p>
@@ -69,8 +69,8 @@ const Allinfos = () => {
                     <li>
                     <p><span class="font-semibold">🎓 Ahsanullah University of Science and Technology, Dhaka 1208</span> <br></br>
                     <span class="text-slate-800">Bachelor of Science in Computer Science and Engineering</span> (<span class="text-sky-400">2018-2023</span>)</p>
-                    <p><span class="font-semibold">Research Experience: </span> Natural Language Processing, Computer Vision and Multimodal Deep Learning</p>
-                    <p><span class="font-semibold">Technical Skills: </span> <span>Pytorch, Tensorflow, Python, MERN Stack (Full) Development, Javascript, SQL, C++ and C.</span></p>
+                    <p class="text-justify"><span class="font-semibold">Research Experience: </span> Natural Language Processing, Computer Vision and Multimodal Deep Learning</p>
+                    <p class="text-justify"><span class="font-semibold">Technical Skills: </span> <span>Pytorch, Tensorflow, Python, MERN Stack (Full) Development, Javascript, SQL, C++ and C.</span></p>
                     </li>
                 </ul>
                 <br></br>
@@ -78,8 +78,8 @@ const Allinfos = () => {
                     <li>
                     <p><span class="font-semibold">🎓 Agriculture University College, Mymensingh 2202</span> <br></br>
                     <span class="text-slate-800">Higher Secondary (Science)</span> (<span class="text-sky-400">2015-2027</span>)</p>
-                    <p><span class="font-semibold">Extra Curricular Activities: </span> District level programming contest.</p>
-                    <p><span class="font-semibold">Technical Skills: </span> <span>HTML, CSS, C.</span></p>
+                    <p class="text-justify"><span class="font-semibold">Extra Curricular Activities: </span> District level programming contest.</p>
+                    <p class="text-justify"><span class="font-semibold">Technical Skills: </span> <span>HTML, CSS and C.</span></p>
                     </li>
                 </ul>
                 <br></br>
@@ -87,16 +87,16 @@ const Allinfos = () => {
                     <li>
                     <p><span class="font-semibold">🎓 St. Joseph Higher Secondary School, Dhaka 1207</span> <br></br>
                     <span class="text-slate-800">Higher Secondary (Science)</span> (<span class="text-sky-400">2015</span>)</p>
-                    <p><span class="font-semibold">Extra Curricular Activities: </span> Writing competition.</p>
-                    <p><span class="font-semibold">Technical Skills: </span> <span>HTML.</span></p>
+                    <p class="text-justify"><span class="font-semibold">Extra Curricular Activities: </span> Writing competition.</p>
+                    <p class="text-justify"><span class="font-semibold">Technical Skills: </span> <span>HTML.</span></p>
                     </li>
                 </ul>
                 <br></br>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p><span class="font-semibold">🎓 Kalmakanda Government Pilot High School, Kalmakanda, Netrakona, Mymensingh 2430</span> <br></br>
+                    <p class="text-justify"><span class="font-semibold">🎓 Kalmakanda Government Pilot High School, Kalmakanda, Netrakona, Mymensingh 2430</span> <br></br>
                     <span class="text-slate-800">Secondary School</span> (<span class="text-sky-400">2010-2015</span>)</p>
-                    <p><span class="font-semibold">Extra Curricular Activities: </span> District level Science Fair Project competition, National Scout Camping, Drama competition.</p>
+                    <p class="text-justify"><span class="font-semibold">Extra Curricular Activities: </span> District level Science Fair Project competition, National Scout Camping, Drama competition.</p>
                     </li>
                 </ul>
             </div>

@@ -64,10 +64,15 @@ const Navigation = () => {
             <ul> 
               
             <li><Link href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</Link></li>
+            <hr/>
             <li><Link href="/recent-highlights#recent" className="text-gray-900 hover:text-orange-400 ml-4">Recent</Link></li>
+            <hr/>
             <li><Link href="/research#research" className="text-gray-900 hover:text-orange-400 ml-4">Research</Link></li>
+            <hr/>
             <li><Link href="/projects#projects" className="text-gray-900 hover:text-orange-400 ml-4">Project</Link></li>
+            <hr/>
             <li><Link href="/infos#info" className="text-gray-900 hover:text-orange-400 ml-4">Info</Link></li>
+            <hr/>
             <li><Link href="/resume#resume" className="text-gray-900 hover:text-orange-400 ml-4">Resume</Link></li>
             </ul>
           </div>

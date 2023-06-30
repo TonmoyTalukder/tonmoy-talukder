@@ -14,7 +14,7 @@ const Info = () => {
                     <li>
                     <p><span class="font-semibold">💼 Technovation</span> <br></br>
                     <span class="text-slate-800">Mentor</span> (<span class="text-sky-400">December, 2021 -</span>)</p>
-                    <p>
+                    <p class="text-justify">
                     Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls. My responsibilitie is mentoring students for their projects. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer
                     </p>
@@ -27,10 +27,10 @@ const Info = () => {
                 <h3 class="text-lg text-sky-800">Education</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p><span class="font-semibold">🎓 Ahsanullah University of Science and Technology, Dhaka 1208</span> <br></br>
+                    <p class="text-justify"><span class="font-semibold">🎓 Ahsanullah University of Science and Technology, Dhaka 1208</span> <br></br>
                     <span class="text-slate-800">Bachelor of Science in Computer Science and Engineering</span> (<span class="text-sky-400">2018-2023</span>)</p>
-                    <p><span class="font-semibold">Research Experience: </span> Natural Language Processing, Computer Vision and Multimodal Deep Learning</p>
-                    <p><span class="font-semibold">Technical Skills: </span> <span>Pytorch, Tensorflow, Python, MERN Stack (Full) Development, Javascript, SQL, C and C++.</span></p>
+                    <p class="text-justify"><span class="font-semibold">Research Experience: </span> Natural Language Processing, Computer Vision and Multimodal Deep Learning</p>
+                    <p class="text-justify"><span class="font-semibold">Technical Skills: </span> <span>Pytorch, Tensorflow, Python, MERN Stack (Full) Development, Javascript, SQL, C and C++.</span></p>
                     </li>
                 </ul>
             </div>
