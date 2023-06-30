@@ -16,7 +16,7 @@ export default function Home() {
 
 <div class="container mx-auto">
   <div class="grid grid-cols-12 gap-4 scroll-container">
-    <div style={{height: "820px"}} class="col-span-5 mx-3 scroll-content feed-special">
+    <div style={{height: "820px",  width: "85%"}} class="col-span-5 mx-3 scroll-content feed-special">
       <Intro/>
     </div>
     <div style={{height: "820px"}} class="col-span-7 mx-3 scroll-content">
