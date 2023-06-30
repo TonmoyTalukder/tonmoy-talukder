@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import { useState } from 'react';
 
 const Myresume = () => {
     const pdfUrl = 'Resume of Tonmoy Talukder.pdf';

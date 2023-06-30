@@ -27,7 +27,7 @@
 }
 
 .scroll-content {
-  height: 740px; /* Adjust the height as per your requirement */
+  height: 790px; /* Adjust the height as per your requirement */
   overflow-y: scroll;
   scrollbar-width: none; /* Hide the scrollbar for Firefox */
   -ms-overflow-style: none; /* Hide the scrollbar for IE and Edge */
