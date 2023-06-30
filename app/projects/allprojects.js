@@ -11,7 +11,11 @@ const Allprojects = () => {
         <br></br> 
         <div>
             <p class="text-justify">
-            Full Stack Development is my passion to explore my thinkings through codes, through programming with my expertise areas and also through exploring whats new to me. I am also passionate about developing <b>new Python tools/libraries</b>, especially those related to Natural Language Processing, that can be utilized for any research or software development aspect.
+            Communicating with the data to contribute to the field of Data Science, Machine Learning, Deep learning and Artificial intelligence for mankind is my pre-eminent ambition.
+            <br></br>
+            I am also passionate about developing <b>new Python tools/libraries</b>, especially those related to Natural Language Processing, that can be utilized for any research or software development aspect.
+            <br></br>
+            Furthermore, Full Stack Development is my passion to explore my thinkings through codes, through programming with my expertise areas and also through exploring whats new to me.
             </p>
         </div>
         <br></br>    

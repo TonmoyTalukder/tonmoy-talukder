@@ -11,9 +11,6 @@ const Research = () => {
         <br></br> 
         <div>
             <p class="text-justify">
-            Communicating with the data to contribute to the field of Data Science, Machine Learning, Deep learning and Artificial intelligence for mankind is my pre-eminent ambition.
-            <br></br>
-            <br></br>
             I am passionate about researching the utilization of natural language processing, computer vision, and multimodal learning. I am particularly interested in how to utilize these technologies to improve the understanding and use of <i>low-resource languages</i>. Recently, I am actively engaged in multiple projects that revolve around <i>text summarization</i>, <i>text generation</i>, <i>text classification</i>, <i>question answering</i>, and <i>image captioning</i> within this domain. I am also interested in understanding how machine learning models interact with data representations during training, and how this can be used to improve their performance.
             </p>
         </div>
