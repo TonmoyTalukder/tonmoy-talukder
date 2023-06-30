@@ -119,6 +119,10 @@
   text-align: right!important;
 }
 
+/* .feed-special{
+  width: "85%"!important;
+} */
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -132,6 +136,9 @@
   }
   .text-special{
     text-align: left!important;
+  }
+  .feed-special{ 
+    padding-left: 10%;
   }
 }
 
