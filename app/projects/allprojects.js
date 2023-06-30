@@ -3,7 +3,7 @@ import React from 'react';
 const Allprojects = () => {
   return (
     
-    <div id="info" class="mt-3">
+    <div id="projects" class="mt-3">
 
         <h2 class="text-xl font-semibold">Developing Quest</h2>
         <hr/>
@@ -11,7 +11,7 @@ const Allprojects = () => {
         <br></br> 
         <div>
             <p class="text-justify">
-            Full Stack Development is my passion to explore my thinkings through codes, through programming with my expertise areas and also through exploring whats new to me. I am also passionate about developing new Python tools/libraries, especially those related to Natural Language Processing, that can be utilized for any research or software development aspect.
+            Full Stack Development is my passion to explore my thinkings through codes, through programming with my expertise areas and also through exploring whats new to me. I am also passionate about developing <b>new Python tools/libraries</b>, especially those related to Natural Language Processing, that can be utilized for any research or software development aspect.
             </p>
         </div>
         <br></br>    

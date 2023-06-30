@@ -3,7 +3,7 @@ import React from 'react';
 const Info = () => {
   return (
     
-    <div id="info" class="mt-3">
+    <div class="mt-3">
 
         <h2 class="text-xl font-semibold">INFO</h2>
         <hr/>

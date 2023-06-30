@@ -3,7 +3,7 @@ import React from 'react';
 const Publications = () => {
   return (
     
-    <div id="research" class="mt-3">
+    <div class="mt-3">
 
         <h2 class="text-xl font-semibold">RESEARCH & PUBLICATIONS</h2>
         <hr/>

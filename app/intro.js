@@ -42,6 +42,8 @@ const Intro = () => {
       I have a keen interest in various research areas, including  <span class="text-sky-600">Multimodal Deep Learning</span>, <span class="text-sky-600">Natural Language Processing</span>, <span class="text-sky-600">Computer Vision</span>, <span class="text-sky-600">Human-Computer Interaction</span>, and <span class="text-sky-600">Machine Learning</span>.
       </p>
     </div>
+    <hr/>
+  <hr/>
   </div>
 </div>
 

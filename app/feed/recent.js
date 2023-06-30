@@ -3,7 +3,7 @@ import React from 'react';
 const Recent = () => {
   return (
     
-    <div id="recent" class="mt-3">
+    <div class="mt-3">
 
         <h2 class="text-xl font-semibold">RECENT HIGHLIGHTS</h2>
         <hr/>

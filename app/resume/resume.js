@@ -10,7 +10,7 @@ const Myresume = () => {
     };
   return (
     
-    <div id="recent" class="mt-3">
+    <div id="resume" class="mt-3">
 
         <h2 class="text-xl font-semibold">Professional Statement</h2>
         <hr/>
