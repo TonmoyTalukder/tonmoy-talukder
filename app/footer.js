@@ -72,7 +72,9 @@ const Footer = () => {
 
         </div>
 
-        <p style={{paddingLeft: "5.25rem"}} class="text-left">&copy; {currentYear}, Tonmoy Talukder. All rights reserved.</p>
+        <p style={{paddingLeft: "5.25rem"}} class="text-left">&copy; {currentYear}, Tonmoy Talukder. All rights reserved. <br></br>
+        <span class="font-sans text-xs subpixel-antialiased text-slate-500">This site has been developed by myself using NEXT.JS.</span>
+        </p>
         <br></br>
         <br></br>
 
