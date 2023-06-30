@@ -10,8 +10,8 @@ const Allprojects = () => {
         <hr/>
         <br></br> 
         <div>
-            <p>
-            Full Stack Development is my passion to explore my thinkings through codes, through programming with my expertise areas and also through exploring whats new to me.
+            <p class="text-justify">
+            Full Stack Development is my passion to explore my thinkings through codes, through programming with my expertise areas and also through exploring whats new to me. I am also passionate about developing new Python tools/libraries, especially those related to Natural Language Processing, that can be utilized for any research or software development aspect.
             </p>
         </div>
         <br></br>    

@@ -17,7 +17,7 @@ const Myresume = () => {
         <hr/>
         <br></br> 
         <div>
-            <p>
+            <p class="text-justify">
             I am a driven individual seeking opportunities in machine learning and data science, aiming to utilize my programming and analytical skills for impactful research. Resourceful, creative, and adaptable, I thrive in dynamic environments. With a passion for technology and problem-solving, I am eager to contribute to collaborative projects and continuously expand my knowledge. Quick to learn, I am dedicated to advancing professionally in the vast field of machine learning. Committed to innovation and growth, I bring a strong foundation in theory and practice. I am excited to connect and contribute to making a difference in the world of machine learning and data science.
             </p>
         </div>
