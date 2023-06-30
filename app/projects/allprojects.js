@@ -15,7 +15,7 @@ const Allprojects = () => {
             </p>
         </div>
         <br></br>    
-        <hr/>
+        <hr/> 
         <br></br>    
 
         <h2 class="text-xl font-semibold">PROJECTS</h2>
