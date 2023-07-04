@@ -32,7 +32,7 @@ const Allinfos = () => {
                     <p><span class="font-semibold">💼 Technovation</span> <br></br>
                     <span class="text-slate-800">Mentor</span> (<span class="text-sky-400">December, 2021-</span>)</p>
                     <p class="text-justify">
-                    Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls. My responsibilitie is mentoring students for their projects. <br></br>
+                    Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls. My responsibility is mentoring students for their projects. <br></br>
                     <span class="font-semibold">Work Nature: </span> Volunteer
                     </p>
                     </li>
