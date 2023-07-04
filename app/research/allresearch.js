@@ -39,33 +39,33 @@ const Research = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                         <p class="text-justify"> 
-                            <span class="text-amber-700">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span>
+                            <span class="text-amber-800 font-semibold">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span>
                             <span  class="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[Under review @ EMNLP 2023]</a></span>
                         </p> 
                     </li>
                     <li>
                         <p class="text-justify"> 
-                            <span class="text-amber-700">🔨 Bangla Key2Text V2: Bengali Text Generation from Stemmed Keywords</span>
+                            <span class="text-amber-800 font-semibold">🔨 Bangla Key2Text V2: Bengali Text Generation from Stemmed Keywords</span>
                         </p>
                     </li>
                     <li>
                         <p class="text-justify"> 
-                            <span class="text-amber-700">🔨 Vision2Cap: Bengali Caption Generation from Images using Pre-trained Transformer</span>
+                            <span class="text-amber-800 font-semibold">🔨 Vision2Cap: Bengali Caption Generation from Images using Pre-trained Transformer</span>
                         </p>
                     </li>
                     <li>
                         <p class="text-justify"> 
-                            <span class="text-amber-700">🔨 Cross Lingual Key2Text: Bengali Text Generation from Multi-Lingual Keywords</span>
+                            <span class="text-amber-800 font-semibold">🔨 Cross Lingual Key2Text: Bengali Text Generation from Multi-Lingual Keywords</span>
                         </p>
                     </li>
                     <li>
                         <p class="text-justify"> 
-                            <span class="text-amber-700">🔨 Multimodal Image and Text Classification using Pre-trained Transformers on LAION-400-MILLION OPEN DATASET</span>
+                            <span class="text-amber-800 font-semibold">🔨 Multimodal Image and Text Classification using Pre-trained Transformers on LAION-400-MILLION OPEN DATASET</span>
                         </p>
                     </li>
                     <li>
                         <p class="text-justify"> 
-                            <span class="text-amber-700">🔨 Bangla Hate Speech Classification using Pre-Trained Transformers on a Benchmark Dataset</span>
+                            <span class="text-amber-800 font-semibold">🔨 Bangla Hate Speech Classification using Pre-Trained Transformers on a Benchmark Dataset</span>
                         </p>
                     </li>
                 </ul>
