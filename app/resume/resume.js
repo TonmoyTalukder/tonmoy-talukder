@@ -3,6 +3,7 @@ import React from 'react';
 
 const Myresume = () => {
     const pdfUrl = 'Resume of Tonmoy Talukder.pdf';
+    // const pdfUrl = 'https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view';
 
     const handleDownload = () => {
         window.open(pdfUrl, '_blank');
