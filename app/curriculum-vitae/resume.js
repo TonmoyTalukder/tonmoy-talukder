@@ -46,7 +46,7 @@ const Myresume = () => {
 
             {/* <iframe src="http://docs.google.com/gview?embedded=true&url=https://github.com/AuthoredByTonmoy/CV-and-Resume/blob/69452dad9e6e8be5e30fd9d2b880bf298450b838/Curriculum-Vitae-of-Tonmoy-Talukder.pdf" frameborder="0" width="100%" height="800px"></iframe> */}
 
-            <iframe src="https://drive.google.com/uc?id=1auLsN9sgf4BrtH0NlQ9IjbYQNFHPi5U6" frameborder="0" width="100%" height="800px"></iframe>
+            <iframe src="https://drive.google.com/viewer?srcid=1auLsN9sgf4BrtH0NlQ9IjbYQNFHPi5U6" frameborder="0" width="100%" height="800px"></iframe>
 
 
             <br></br>
