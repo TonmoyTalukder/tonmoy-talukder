@@ -26,7 +26,7 @@ const Allinfos = () => {
         <hr/>
         <hr/>
             <div>
-                <h3 class="text-lg text-sky-800">Experience</h3>
+                <h3 class="text-lg font-bold text-sky-800">Experience</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="font-semibold">💼 Technovation</span> <br></br>
@@ -64,7 +64,7 @@ const Allinfos = () => {
             <hr/>
             <br></br>
             <div>
-                <h3 class="text-lg text-sky-800">Education</h3>
+                <h3 class="text-lg font-bold text-sky-800">Education</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="font-semibold">🎓 Ahsanullah University of Science and Technology, Dhaka 1208</span> <br></br>
@@ -103,11 +103,11 @@ const Allinfos = () => {
             <hr/>
             <br></br>
             <div>
-                <h3 class="text-lg text-sky-800">Contact</h3>
+                <h3 class="text-lg font-bold text-sky-800">Contact</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span class="font-semibold">📧 Email: </span>
-                    <span class="text-orange-600"><a href="mailto:tonmoytalukder.cs@gmail.com">tonmoytalukder [dot] cs [at] gmail [dot] com</a></span></p>
+                    <span class="text-orange-700"><a href="mailto:tonmoytalukder.cs@gmail.com">tonmoytalukder [dot] cs [at] gmail [dot] com</a></span></p>
                     </li>
                     <li>
                     <p><span class="font-semibold">🌍 Live in: </span>
