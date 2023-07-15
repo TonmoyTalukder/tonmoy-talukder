@@ -3,7 +3,7 @@ import React from 'react';
 
 const Myresume = () => {
     const resumeUrl = 'Resume of Tonmoy Talukder.pdf';
-    const pdfUrl = 'Curriculum Vitae of Tonmoy Talukder.pdf';
+    const pdfUrl = 'Curriculum-Vitae-of-Tonmoy-Talukder.pdf';
     // const pdfUrl = 'https://github.com/AuthoredByTonmoy/resume/blob/main/Resume_of_Tonmoy_Talukder.pdf';
     // const pdfUrl = 'https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR';
 
