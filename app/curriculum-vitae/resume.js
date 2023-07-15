@@ -11,8 +11,20 @@ const Myresume = () => {
         window.open(pdfUrl, '_blank');
     };
     const handleDownloadResume = () => {
-        window.open(resumeUrl, '_blank');
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/uc?id=1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR';
+        link.target = '_blank';
+        link.download = 'Resume-of-Tonmoy-Talukder.pdf'; // Set the desired filename for the downloaded file
+        link.click();
     };
+
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/uc?id=1auLsN9sgf4BrtH0NlQ9IjbYQNFHPi5U6';
+        link.target = '_blank';
+        link.download = 'Curriculum-Vitae-of-Tonmoy-Talukder.pdf'; // Set the desired filename for the downloaded file
+        link.click();
+      };
   return (
     
     <div id="cv" class="mt-3">
@@ -35,7 +47,7 @@ const Myresume = () => {
         <hr/>
         <div>
             <br></br>
-            <button onClick={handleDownload} class="download-button">⬇️ Download My Curriculum Vitae</button>
+            <button onClick={handleDownloadCV} class="download-button">⬇️ Download My Curriculum Vitae</button>
             <br></br>
             <br></br>
             {/* <iframe src={pdfUrl} width="100%" height="600px" /> */}
