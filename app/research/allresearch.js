@@ -27,7 +27,7 @@ const Research = () => {
                 <hr/>
                 <br></br>
                 {/* <br></br> */}
-                <h3 class="text-lg text-green-700">Publications</h3>
+                <h3 class="text-lg font-bold text-green-700">Publications 📄</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p class="text-justify"><span class="text-sm font-semibold">📌 [September, 2023]</span> <span class="text-sky-700 font-bold">Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach</span></p>
@@ -41,14 +41,21 @@ const Research = () => {
             <hr/>
             <br></br>
             <div>
-                <h3 class="text-lg text-orange-500">Ongoing Works 📢</h3>
+                <h3 class="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                         <p class="text-justify"> 
                             <span class="text-amber-800 font-semibold">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span>
-                            <span  class="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[Under review @ EMNLP 2023]</a></span>
+                            <span  class="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span>
                         </p> 
                     </li>
+                </ul>
+            </div>
+            <hr/>
+            <br></br>
+            <div>
+                <h3 class="text-lg font-bold text-orange-500">Ongoing Works 📢</h3>
+                <ul style={{listStyleType: "none"}}>
                     <li>
                         <p class="text-justify"> 
                             <span class="text-amber-800 font-semibold">🔨 Bangla Key2Text V2: Bengali Text Generation from Stemmed Keywords</span>
