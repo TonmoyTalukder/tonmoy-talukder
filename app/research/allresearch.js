@@ -22,7 +22,7 @@ const Research = () => {
         navigator.clipboard.writeText(spanText)
         .then(() => {
             console.log('Text copied successfully!');
-            alert('Abstract copied successfully!');
+            alert('Copied successfully!');
         })
         .catch((error) => {
             console.error('Error copying text:', error);
