@@ -5,7 +5,7 @@ const Myresume = () => {
     const resumeUrl = 'Resume of Tonmoy Talukder.pdf';
     const pdfUrl = 'Curriculum-Vitae-of-Tonmoy-Talukder.pdf';
     // const pdfUrl = 'https://github.com/AuthoredByTonmoy/resume/blob/main/Resume_of_Tonmoy_Talukder.pdf';
-    // const pdfUrl = 'https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR';
+    // const pdfUrl = 'https://drive.google.com/file/d/1auLsN9sgf4BrtH0NlQ9IjbYQNFHPi5U6/view';
 
     const handleDownload = () => {
         window.open(pdfUrl, '_blank');
@@ -40,7 +40,14 @@ const Myresume = () => {
             <br></br>
             {/* <iframe src={pdfUrl} width="100%" height="600px" /> */}
 
-            <object width="100%" height="800px" data={pdfUrl} type="application/pdf" style={{overflowY: 'scroll', scrollbarWidth: 'none', msOverflowStyle: 'none'}} />
+            {/* <object width="100%" height="800px" data={pdfUrl} type="application/pdf" style={{overflowY: 'scroll', scrollbarWidth: 'none', msOverflowStyle: 'none'}} /> */}
+
+            {/* <iframe id="pdfviewer" src="https://github.com/AuthoredByTonmoy/CV-and-Resume/blob/69452dad9e6e8be5e30fd9d2b880bf298450b838/Curriculum-Vitae-of-Tonmoy-Talukder.pdf" frameborder="0" width="100%" height="800px"></iframe> */}
+
+            {/* <iframe src="http://docs.google.com/gview?embedded=true&url=https://github.com/AuthoredByTonmoy/CV-and-Resume/blob/69452dad9e6e8be5e30fd9d2b880bf298450b838/Curriculum-Vitae-of-Tonmoy-Talukder.pdf" frameborder="0" width="100%" height="800px"></iframe> */}
+
+            <iframe src="https://drive.google.com/uc?id=1auLsN9sgf4BrtH0NlQ9IjbYQNFHPi5U6" frameborder="0" width="100%" height="800px"></iframe>
+
 
             <br></br>
             <button onClick={handleDownloadResume} class="download-button">⬇️ Download My Resume</button>
