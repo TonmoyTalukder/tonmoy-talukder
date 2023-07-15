@@ -2,12 +2,16 @@
 import React from 'react';
 
 const Myresume = () => {
-    const pdfUrl = 'Resume of Tonmoy Talukder.pdf';
+    const resumeUrl = 'Resume of Tonmoy Talukder.pdf';
+    const pdfUrl = 'Curriculum Vitae of Tonmoy Talukder.pdf';
     // const pdfUrl = 'https://github.com/AuthoredByTonmoy/resume/blob/main/Resume_of_Tonmoy_Talukder.pdf';
     // const pdfUrl = 'https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR';
 
     const handleDownload = () => {
         window.open(pdfUrl, '_blank');
+    };
+    const handleDownloadResume = () => {
+        window.open(resumeUrl, '_blank');
     };
   return (
     
@@ -26,17 +30,22 @@ const Myresume = () => {
         <hr/>
         <br></br> 
 
-        <h2 class="text-xl font-semibold">RESUME</h2>
+        <h2 class="text-xl font-semibold">Curriculum Vitae</h2>
         <hr/>
         <hr/>
         <div>
             <br></br>
-            <button onClick={handleDownload} class="download-button">⬇️ Download My Resume</button>
+            <button onClick={handleDownload} class="download-button">⬇️ Download My Curriculum Vitae</button>
             <br></br>
             <br></br>
             {/* <iframe src={pdfUrl} width="100%" height="600px" /> */}
 
-            <object width="100%" height="800px" data={pdfUrl} type="application/pdf" />
+            <object width="100%" height="800px" data={pdfUrl} type="application/pdf" style={{overflowY: 'scroll', scrollbarWidth: 'none', msOverflowStyle: 'none'}} />
+
+            <br></br>
+            <button onClick={handleDownloadResume} class="download-button">⬇️ Download My Resume</button>
+            <br></br>
+            <br></br>
 
         </div>
         <hr/>

@@ -18,7 +18,7 @@ const Navigation = () => {
         <Link href="/research" className="text-gray-900 hover:text-orange-400 ml-4">Research</Link>
         <Link href="/projects" className="text-gray-900 hover:text-orange-400 ml-4">Project</Link>
         <Link href="/infos" className="text-gray-900 hover:text-orange-400 ml-4">Info</Link>
-        <Link href="/resume" className="text-gray-900 hover:text-orange-400 ml-4">Resume</Link>
+        <Link href="/curriculum-vitae" className="text-gray-900 hover:text-orange-400 ml-4">Curriculum Vitae</Link>
       </div>
 
       {/* Toggle Button for Small Screens */}
@@ -73,7 +73,7 @@ const Navigation = () => {
             <hr/>
             <li><Link href="/infos#info" className="text-gray-900 hover:text-orange-400 ml-4">Info</Link></li>
             <hr/>
-            <li><Link href="/resume#resume" className="text-gray-900 hover:text-orange-400 ml-4">Resume</Link></li>
+            <li><Link href="/curriculum-vitae#cv" className="text-gray-900 hover:text-orange-400 ml-4">Curriculum Vitae</Link></li>
             </ul>
           </div>
         )}

@@ -3,10 +3,15 @@ import Intro from '../intro'
 import Footer from '../footer'
 import Header from '../header'
 import Research from './allresearch'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <main style={{height: "100%"}}>
+
+<Head>
+      <title>Research - Tonmoy Talukder</title>
+    </Head>
 <div style={{height: "40px"}} class="bg-gray-50 mb-5">
     <span class="text-right">
       <Header/>
