@@ -63,17 +63,17 @@ const Navigation = () => {
           <div className="absolute right-0 mt-8 py-0 w-44 bg-white rounded-md shadow-lg px-0">
             <ul> 
               
-            <li class='hover:bg-orange-500 hover:text-white rounded-t-lg px-4'><Link href="/" className="text-gray-900 hover:text-white ml-4">Home</Link></li>
+            <li class='hover:bg-orange-500 hover:text-white rounded-t-lg px-4'><Link href="/" className="text-gray-900 ml-4">Home</Link></li>
             <hr/>
-            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/recent-highlights#recent" className="text-gray-900 hover:text-white ml-4">Recent</Link></li>
+            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/recent-highlights#recent" className="text-gray-900 ml-4">Recent</Link></li>
             <hr/>
-            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/research#research" className="text-gray-900 hover:text-white ml-4">Research</Link></li>
+            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/research#research" className="text-gray-900 ml-4">Research</Link></li>
             <hr/>
-            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/projects#projects" className="text-gray-900 hover:text-white ml-4">Project</Link></li>
+            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/projects#projects" className="text-gray-900 ml-4">Project</Link></li>
             <hr/>
-            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/infos#info" className="text-gray-900 hover:text-white ml-4">Info</Link></li>
+            <li class='hover:bg-orange-500 hover:text-white px-4'><Link href="/infos#info" className="text-gray-900 ml-4">Info</Link></li>
             <hr/>
-            <li class='hover:bg-orange-500 hover:text-white rounded-b-lg px-4'><Link href="/curriculum-vitae#cv" className="text-gray-900 hover:text-white ml-4">Curriculum Vitae</Link></li>
+            <li class='hover:bg-orange-500 hover:text-white rounded-b-lg px-4'><Link href="/curriculum-vitae#cv" className="text-gray-900 ml-4">Curriculum Vitae</Link></li>
             </ul>
           </div>
         )}
