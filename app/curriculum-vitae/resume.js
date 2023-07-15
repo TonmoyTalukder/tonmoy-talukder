@@ -15,7 +15,7 @@ const Myresume = () => {
     };
   return (
     
-    <div id="resume" class="mt-3">
+    <div id="cv" class="mt-3">
 
         <h2 class="text-xl font-semibold">Professional Statement</h2>
         <hr/>
