@@ -2,6 +2,8 @@
 import React from 'react';
 import { useState, useRef } from "react";
 
+import { FaResearchgate, FaGraduationCap} from 'react-icons/fa';
+
 const Research = () => {
     let [openAbstract, setOpenAbstract] = useState(1);
 
@@ -36,8 +38,15 @@ const Research = () => {
             <p class="text-justify">
             Most recent publication updates can be found on the following profiles:
             <ul>
-                <li><a target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><span class="text-sky-400 hover:text-orange-400">Google Scholar</span></a></li>
-                <li><a target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Tonmoy-Talukder-2"><span class="text-sky-400 hover:text-orange-400">ResearchGate</span></a></li>
+                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><span class="text-sky-400 hover:text-orange-400">
+                    <div className="social-icon">
+                    <FaGraduationCap style={{color: '#3295EF'}} /><span> &nbsp;Google Scholar</span>
+                    </div></span></a></li>
+                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Tonmoy-Talukder-2"><span class="text-sky-400 hover:text-orange-400">
+                <div className="social-icon">
+                    <FaResearchgate style={{color: '#5BF8B6'}} /><span> &nbsp;ResearchGate</span>
+                    </div>
+                    </span></a></li>
             </ul>
             </p>
         </div>
