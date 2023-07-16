@@ -16,6 +16,7 @@ const Navigation = () => {
         <Link href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</Link>
         <Link href="/recent-highlights" className="text-gray-900 hover:text-orange-400 ml-4">Recent</Link>
         <Link href="/research" className="text-gray-900 hover:text-orange-400 ml-4">Research</Link>
+        <Link href="/publication" className="text-gray-900 hover:text-orange-400 ml-4">Publication</Link>
         <Link href="/projects" className="text-gray-900 hover:text-orange-400 ml-4">Project</Link>
         <Link href="/infos" className="text-gray-900 hover:text-orange-400 ml-4">Info</Link>
         <Link href="/curriculum-vitae" className="text-gray-900 hover:text-orange-400 ml-4">Curriculum Vitae</Link>
@@ -68,6 +69,8 @@ const Navigation = () => {
             <Link href="/recent-highlights#recent" className=""><li class='hover:bg-orange-500 text-gray-900 hover:text-white px-4 text-right'>Recent</li></Link>
             <hr/>
             <Link href="/research#research" className=""><li class='hover:bg-orange-500 text-gray-900 hover:text-white px-4 text-right'>Research</li></Link>
+            <hr/>
+            <Link href="/publication#publication" className=""><li class='hover:bg-orange-500 text-gray-900 hover:text-white px-4 text-right'>Publication</li></Link>
             <hr/>
             <Link href="/projects#projects" className=""><li class='hover:bg-orange-500 text-gray-900 hover:text-white px-4 text-right'>Project</li></Link>
             <hr/>
