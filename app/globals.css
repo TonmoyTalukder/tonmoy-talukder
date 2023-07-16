@@ -157,7 +157,21 @@
     padding-left: 10%;
   }
 }
+.feed-special-new{ 
+  height: 100%;
+}
 
+.cv-special-new{ 
+  height: 1170px;
+}
+@media (min-width: 769px) {
+  .feed-special-new{ 
+    height: 820px!important;
+  }
+  .cv-special-new{ 
+    height: 1877px;
+  }
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

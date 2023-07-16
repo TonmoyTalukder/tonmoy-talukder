@@ -32,45 +32,54 @@ const Research = () => {
     };
   return (
     
-    <div id="publication" class="mt-3">
+    <div id="publication" className="mt-3">
 
+<h2 className="text-xl font-semibold">Publication Insights</h2>
+        <hr/>
+        <hr/>
+        <br></br> 
         <div>
-            <p class="text-justify">
-            Most recent publication updates can be found on the following profiles:
+            <span className="text-justify">
+                <span className='italic'>&#34;The only limit to our realization of tomorrow will be our doubts of today.&#34;</span> - Franklin D. Roosevelt
+
+                <br></br>
+                <br></br>
+
+           <span className='font-semibold'>Most recent publication updates can be found on the following profiles:</span>
             <ul>
-                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><span class="text-sky-400 hover:text-orange-400">
+                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><span className="text-sky-400 hover:text-orange-400">
                     <div className="social-icon">
                     <FaGraduationCap style={{color: '#3295EF'}} /><span> &nbsp;Google Scholar</span>
                     </div></span></a></li>
-                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Tonmoy-Talukder-2"><span class="text-sky-400 hover:text-orange-400">
+                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Tonmoy-Talukder-2"><span className="text-sky-400 hover:text-orange-400">
                 <div className="social-icon">
                     <FaResearchgate style={{color: '#5BF8B6'}} /><span> &nbsp;ResearchGate</span>
                     </div>
                     </span></a></li>
             </ul>
-            </p>
+            </span>
         </div>
         <br></br>    
         <hr/>
         <br></br>
 
-        <h2 class="text-xl font-semibold">PUBLICATIONS</h2>
+        <h2 className="text-xl font-semibold">PUBLICATIONS</h2>
         <hr/>
         <hr/>
             <div>
                 {/* <br></br>
-                <code style={{color:'black'}} class="rounded border-2 bg-slate-200">Most recent publication updates can be found on my <a target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><em class="text-sky-400 hover:text-orange-400">[Google Scholar]</em></a> profile.</code>
+                <code style={{color:'black'}} className="rounded border-2 bg-slate-200">Most recent publication updates can be found on my <a target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><em className="text-sky-400 hover:text-orange-400">[Google Scholar]</em></a> profile.</code>
                 <hr/> */}
                 <br></br>
                 {/* <br></br> */}
-                <h3 class="text-lg font-bold text-green-700">Academic Publications 📄</h3>
+                <h3 className="text-lg font-bold text-green-700">Academic Publications 📄</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p class="text-justify"><span class="text-sm font-semibold">📌 [September, 2023]</span> <span class="text-sky-700 font-bold">Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach</span></p>
-                    <p class="text-justify"><span class="font-semibold">Authors: </span> G. M. Shahariar*, <span class="font-semibold text-orange-500">Tonmoy Talukder</span>*, Rafin Alam Khan Sotez, and Md. Tanvir Rouf Shawon</p> 
-                    <span class="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</span>
-                    <p class="text-justify"><span class="text-sm font-semibold">Conference: </span> <span class="italic">International Conference on Big Data, IoT and Machine Learning (BIM 2023)</span></p>
-                    <p class="text-justify">[<span class="text-sky-400 hover:text-orange-400" onClick={handleOpenAbstract}>Abstract</span>] [<span class="text-sky-400 hover:text-orange-400">PDF</span>] [<span class="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Rank-Your-Summaries-Enhancing-Bengali-Text-Summarization-via-Ranking-based-Approach" target="_blank" rel="noreferrer">Code & Dataset</a></span>] [<span class="text-sky-400 hover:text-orange-400">Presentation</span>] [<span class="text-sky-400 hover:text-orange-400">Citation bib</span>]</p>
+                    <p className="text-justify"><span className="text-sm font-semibold">📌 [September, 2023]</span> <span className="text-sky-700 font-bold">Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach</span></p>
+                    <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, <span className="font-semibold text-orange-500">Tonmoy Talukder</span>*, Rafin Alam Khan Sotez, and Md. Tanvir Rouf Shawon</p> 
+                    <span className="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</span>
+                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">International Conference on Big Data, IoT and Machine Learning (BIM 2023)</span></p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenAbstract}>Abstract</span>] [<span className="text-sky-400 hover:text-orange-400">PDF</span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Rank-Your-Summaries-Enhancing-Bengali-Text-Summarization-via-Ranking-based-Approach" target="_blank" rel="noreferrer">Code & Dataset</a></span>] [<span className="text-sky-400 hover:text-orange-400">Presentation</span>] [<span className="text-sky-400 hover:text-orange-400">Citation bib</span>]</p>
                     {openAbstract == 0 &&
                         <div className="" style={{paddingLeft: '15%', paddingRight: '5%'}}>
                     <div className='accordion-container bg-zinc-300 rounded-md p-2'>
@@ -88,9 +97,9 @@ const Research = () => {
                     </li>
                 </ul>
             </div>
-            <hr/>
             <br></br>
         <hr/>
+        
 
     </div>
 
