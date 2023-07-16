@@ -30,7 +30,7 @@ const Research = () => {
     };
   return (
     
-    <div id="research" class="mt-3">
+    <div id="publication" class="mt-3">
 
         <div>
             <p class="text-justify">
