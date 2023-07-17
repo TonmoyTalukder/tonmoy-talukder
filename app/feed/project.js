@@ -19,8 +19,8 @@ const Projects = () => {
                 <br></br>       
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p className="text-justify"><span className="text-sm font-semibold">💻 [January, 2023]</span> <span className="text-sky-700 font-bold">Bengali Hate Speech classNameification</span></p>
-                    <p className="text-justify"><span className="font-semibold">Description: </span>NLP classNameification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
+                    <p className="text-justify"><span className="text-sm font-semibold">💻 [January, 2023]</span> <span className="text-sky-700 font-bold">Bengali Hate Speech classification</span></p>
+                    <p className="text-justify"><span className="font-semibold">Description: </span>NLP classification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
                     <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-classNameification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>         
@@ -39,7 +39,7 @@ const Projects = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">💻 [October, 2021]</span> <span className="text-sky-700 font-bold">Churning Telecom Company Prediction</span></p>
-                    <p className="text-justify"><span className="font-semibold">Description: </span>Applied One-hot Encoding, Decision Tree classNameification, Grid Search & Cross-Validation, Confusion Matrix, classNameification report, and ROC-AUC.</p>
+                    <p className="text-justify"><span className="font-semibold">Description: </span>Applied One-hot Encoding, Decision Tree classification, Grid Search & Cross-Validation, Confusion Matrix, classification report, and ROC-AUC.</p>
                     <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Churning-Telecom-Company-Prediction">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>            
