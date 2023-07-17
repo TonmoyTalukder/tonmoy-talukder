@@ -38,7 +38,7 @@ const Allprojects = () => {
                     <li>
                     <p><span className="text-sm font-semibold">💻 [January, 2023]</span> <span className="text-sky-700 font-bold">Bengali Hate Speech classification</span></p>
                     <p className="text-justify"><span className="font-semibold">Description: </span>NLP classification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
-                    <p>[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-classNameification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
+                    <p>[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-Classification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>         
                 <br></br>    
