@@ -55,9 +55,12 @@ const Research = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span>
-                            <span  className="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span>
-                        </p> 
+                            <span className="text-amber-800 font-semibold">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span></p> 
+                            <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, and <span className="font-semibold text-orange-500">Tonmoy Talukder</span>*</p> 
+                    <p className="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</p>
+                    
+                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">The 2023 Conference on Empirical Methods in Natural Language Processing </span>
+                    <span  className="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span></p>
                     </li>
                 </ul>
             </div>
@@ -73,22 +76,22 @@ const Research = () => {
                     </li>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Vision2Cap: Bengali Caption Generation from Images using Pre-trained Transformer</span>
+                            <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
                         </p>
                     </li>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Cross Lingual Key2Text: Bengali Text Generation from Multi-Lingual Keywords</span>
+                            <span className="text-amber-800 font-semibold">🔨 Cross Lingual Key2Text: Bengali Text Generation from Cross-Lingual Keywords</span>
                         </p>
                     </li>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Multimodal Image and Text classNameification using Pre-trained Transformers on LAION-400-MILLION OPEN DATASET</span>
+                            <span className="text-amber-800 font-semibold">🔨 Multimodal Image and Text classNameification using Pre-trained Transformers</span>
                         </p>
                     </li>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Bangla Hate Speech classNameification using Pre-Trained Transformers on a Benchmark Dataset</span>
+                            <span className="text-amber-800 font-semibold">🔨 Bangla Hate Speech Classification using Pre-Trained Transformers on a Benchmark Dataset</span>
                         </p>
                     </li>
                 </ul>

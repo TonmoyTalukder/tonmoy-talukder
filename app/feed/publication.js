@@ -60,7 +60,7 @@ const Publications = () => {
                     <p className="text-justify"><span className="text-sm font-semibold">📌 [September, 2023]</span> <span className="text-sky-700 font-bold">Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach</span></p>
                     <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, <span className="font-semibold text-orange-500">Tonmoy Talukder</span>*, Rafin Alam Khan Sotez, and Md. Tanvir Rouf Shawon</p> 
                     <span className="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</span>
-                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">International Conference on Big Data, IoT and Machine Learning (BIM 2023)</span></p>
+                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">International Conference on Big Data, IoT and Machine Learning </span><span  className="text-sky-400 hover:text-orange-400"> <a href="https://confbim.com/">[BIM 2023]</a></span></p>
                     <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenAbstract}>Abstract</span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://arxiv.org/pdf/2307.07392.pdf" target="_blank" rel="noreferrer">PDF</a></span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Rank-Your-Summaries-Enhancing-Bengali-Text-Summarization-via-Ranking-based-Approach" target="_blank" rel="noreferrer">Code & Dataset</a></span>] [<span className="text-sky-400 hover:text-orange-400">Presentation</span>] [<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenBib}>Citation bib</span>]</p>
                     {openAbstract == 0 &&
                         <div className="" style={{paddingLeft: '15%', paddingRight: '5%'}}>
@@ -117,10 +117,13 @@ const Publications = () => {
                 <h3 className="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                        <p className="text-justify"> 
+                    <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span>
-                            <span  className="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span>
-                        </p> 
+                            <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, and <span className="font-semibold text-orange-500">Tonmoy Talukder</span>*</p> 
+                    <span className="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</span>
+                    </p> 
+                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">The 2023 Conference on Empirical Methods in Natural Language Processing </span>
+                    <span  className="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span></p> 
                     </li>
                 </ul>
             </div>
@@ -131,12 +134,12 @@ const Publications = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Vision2Cap: Bengali Caption Generation from Images using Pre-trained Transformer</span>
+                            <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
                         </p>
                     </li>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Cross Lingual Key2Text: Bengali Text Generation from Multi-Lingual Keywords</span>
+                            <span className="text-amber-800 font-semibold">🔨 Cross Lingual Key2Text: Bengali Text Generation from Cross-Lingual Keywords</span>
                         </p>
                     </li>
                 </ul>
