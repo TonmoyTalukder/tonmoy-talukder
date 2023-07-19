@@ -82,14 +82,22 @@ const Publications = () => {
                             <div><button className='bg-zinc-700 text-white hover:bg-orange-400 rounded-md p-1' onClick={handleCopy}>Copy Abstract</button></div>
                             <br></br>
                         <p className="text-left text-sm font-mono text-neutral-800"><span ref={spanRef}>
-                        @misc&#123;shahariar2023rank,<br></br>
+
+                        @article&#123;shahariar2023rank,<br></br>
+                            &emsp;title=&#123;Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach&#125;,<br></br>
+                            &emsp;author=&#123;Shahariar, GM and Talukder, Tonmoy and Sotez, Rafin Alam Khan and Shawon, Md Tanvir Rouf&#125;,<br></br>
+                            &emsp;journal=&#123;arXiv preprint arXiv:2307.07392&#125;,<br></br>
+                            &emsp;year=&#123;2023&#125;<br></br>
+                        &#125;
+                        
+                        {/* @misc&#123;shahariar2023rank,<br></br>
                                     &emsp;title=&#123;Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach&#125;,<br></br>
                                     &emsp;author=&#123;G. M. Shahariar and Tonmoy Talukder and Rafin Alam Khan Sotez and Md. Tanvir Rouf Shawon&#125;,<br></br>
                                     &emsp;year=&#123;2023&#125;,<br></br>
                                     &emsp;eprint=&#123;2307.07392&#125;,<br></br>
                                     &emsp;archivePrefix=&#123;arXiv&#125;,<br></br>
                                     &emsp;primaryClass=&#123;cs.CL&#125;<br></br>
-                                &#125; 
+                                &#125;  */}
                         {/* <code>
                             {`
                             @misc{shahariar2023rank,
