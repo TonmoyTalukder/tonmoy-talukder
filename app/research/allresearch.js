@@ -75,7 +75,7 @@ const Research = () => {
                         </p>
                     </li>
                     <li>
-                        <p className="text-justify"> 
+                        <p className="text-left"> 
                             <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
                         </p>
                     </li>
