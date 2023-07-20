@@ -38,7 +38,7 @@ const Research = () => {
         <br></br> 
         <div>
             <p className="text-justify">
-            I am passionate about researching the utilization of natural language processing, computer vision, and multimodal learning. I am particularly interested in how to utilize these technologies to improve the understanding and use of <i>low-resource languages</i>. Recently, I am actively engaged in multiple projects that revolve around <i>text summarization</i>, <i>text generation</i>, <i>text classNameification</i>, <i>question answering</i>, and <i>image captioning</i> within this domain. I am also interested in understanding how machine learning models interact with data representations during training, and how this can be used to improve their performance.
+            I am passionate about researching the utilization of natural language processing, computer vision, and multimodal learning. I am particularly interested in how to utilize these technologies to improve the understanding and use of <i>low-resource languages</i>. Recently, I am actively engaged in multiple projects that revolve around <i>text summarization</i>, <i>text generation</i>, <i>text classification</i>, <i>question answering</i>, and <i>image captioning</i> within this domain. I am also interested in understanding how machine learning models interact with data representations during training, and how this can be used to improve their performance.
             </p>
         </div>
         <br></br>    
