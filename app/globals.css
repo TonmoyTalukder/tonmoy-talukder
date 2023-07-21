@@ -164,12 +164,21 @@
 .cv-special-new{ 
   height: 1170px;
 }
+.intro-special{
+  display: none;
+}
 @media (min-width: 769px) {
   .feed-special-new{ 
-    height: 820px!important;
+    height: 860px!important;
   }
   .cv-special-new{ 
     height: 1877px;
+  }
+  .intro-special{
+    display: inline;
+  }
+  .intro-special-second{
+    display: none;
   }
 }
 

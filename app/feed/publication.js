@@ -125,11 +125,11 @@ const Publications = () => {
                 <h3 className="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p className="text-justify"> 
+                    <div className="text-justify"> 
                             <span className="text-amber-800 font-semibold">⏳ Bangla Key2Text: Text Generation from Keywords in Bengali </span>
                             <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, and <span className="font-semibold text-orange-500">Tonmoy Talukder</span>*</p> 
                     <span className="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</span>
-                    </p> 
+                    </div> 
                     <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">The 2023 Conference on Empirical Methods in Natural Language Processing </span>
                     <span  className="text-sky-400 hover:text-orange-400"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span></p> 
                     </li>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Intro from '../intro'
+import IntroV2 from '../introV2'
 import Footer from '../footer'
 import Header from '../header'
 import Research from './allpublication'
@@ -21,7 +22,8 @@ export default function Home() {
 <div className="container mx-auto">
   <div className="grid grid-cols-12 gap-4 scroll-container">
     <div style={{width: "85%"}} className="feed-special-new col-span-5 mx-3 scroll-content feed-special">
-      <Intro/>
+    <span className="intro-special"><Intro/></span>
+      <span className="intro-special-second"><IntroV2/></span>
     </div>
     <div className="feed-special-new col-span-7 mx-3 scroll-content">
       <Research/>
