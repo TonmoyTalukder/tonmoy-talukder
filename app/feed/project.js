@@ -9,6 +9,7 @@ const Projects = () => {
         <hr/>
         <hr/>
             <div>
+                <h3 className="text-lg font-bold text-lime-700">Machine Learning 👽</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">💻 [February, 2023]</span> <span className="text-sky-700 font-bold">Bangla-KeywordExtractor</span></p>
@@ -23,8 +24,24 @@ const Projects = () => {
                     <p className="text-justify"><span className="font-semibold">Description: </span>NLP classification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
                     <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-Classification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
                     </li>
-                </ul>         
-                <br></br>    
+                </ul>                
+            </div>
+            <hr/>
+            <br></br>
+            <div>
+            <h3 className="text-lg font-bold text-lime-700">Data Science 💹</h3>
+            <ul style={{listStyleType: "none"}}>
+                    <li>
+                    <p><span className="text-sm font-semibold">💻 [July, 2021]</span> <span className="text-sky-700 font-bold">Audi used car EDA</span></p>
+                    <p className="text-justify"><span className="font-semibold">Description: </span>An overview on a dataset of AUDI Cars. Analysis of the data set with comparing different columns with each other, using Histogram, Scatterplot, Distribution, ECDF, Barplot, Violin plot along with proper naming and plot analysis.</p>
+                    <p>[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/audi_used_car_EDA">GitHub Repository</a></span>]</p>
+                    </li>
+                </ul>               
+            </div>
+            <hr/>
+            <br></br>
+            <div>
+            <h3 className="text-lg font-bold text-lime-700">Software 🖥️</h3>   
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">💻 [March, 2022]</span> <span className="text-sky-700 font-bold">BookPedia Prototype - A Social Media (React + ASP.NET Framework Project)</span></p>
@@ -34,15 +51,7 @@ const Projects = () => {
                     <b className="text-justify">Database:</b> Entity Framework </p>
                     <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/bookpedia-frontend">Frontend GitHub Repository</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/InfiniteY-Lab/BookPediaAPIV0.0.12">Backend GitHub Repository</a></span>]</p>
                     </li>
-                </ul>           
-                <br></br>  
-                <ul style={{listStyleType: "none"}}>
-                    <li>
-                    <p className="text-justify"><span className="text-sm font-semibold">💻 [October, 2021]</span> <span className="text-sky-700 font-bold">Churning Telecom Company Prediction</span></p>
-                    <p className="text-justify"><span className="font-semibold">Description: </span>Applied One-hot Encoding, Decision Tree classification, Grid Search & Cross-Validation, Confusion Matrix, classification report, and ROC-AUC.</p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/Churning-Telecom-Company-Prediction">GitHub Repository</a></span>]</p>
-                    </li>
-                </ul>            
+                </ul>                     
             </div>
             <hr/>
             {/* <br></br> */}
