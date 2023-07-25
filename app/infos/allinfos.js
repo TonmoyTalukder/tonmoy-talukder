@@ -182,7 +182,7 @@ const Allinfos = () => {
                     <span className="font-medium text-slate-800">President</span> (<span className="text-sky-400">October, 2013 - October, 2016</span>)<br></br>
                     <span className="font-medium text-slate-800">Member</span> (<span className="text-sky-400">2007 - September, 2013</span>)</p>
                     <p className="text-justify">
-                    Pushpa Child Forum is a children organization of World Vision Bangladesh, Kalmakanda ADP, Netrakona, Mymensingh 2430. It works for children&apos;s organizational skills development along with preach social awareness among the rural areas.<br></br>
+                    Pushpa Child Forum is a children organization of World Vision Bangladesh, Kalmakanda ADP, Netrakona, Mymensingh 2430. It works for children&apos;s organizational skills development and promotes social awareness in rural areas.<br></br>
                     <span className="font-semibold">Work Nature: </span> Volunteer
                     </p>
                     </li>
