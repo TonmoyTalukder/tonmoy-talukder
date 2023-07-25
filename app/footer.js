@@ -75,7 +75,7 @@ const Footer = () => {
         <div style={{paddingLeft: "5.25rem"}} class="text-left">
             <br></br>
             <span>&copy; {currentYear}, Tonmoy Talukder. All rights reserved.</span><br></br>
-            <span class="font-sans text-xs subpixel-antialiased text-slate-500">This site has been developed by myself using NEXT.JS.</span> 
+            <span class="font-sans text-xs subpixel-antialiased text-slate-500">This site has been developed by myself using NEXT.JS.</span>
         </div>
         <br></br>
         <br></br>
