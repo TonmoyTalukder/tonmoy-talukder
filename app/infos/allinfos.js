@@ -95,7 +95,7 @@ const Allinfos = () => {
                     <ul>
                         <li>
                         <span class="flex justify-between">
-                            <span className='text-zinc-700' onClick={handleOpenPeace}><span>&emsp;{openPeace == 1 && <span>▶️</span>}{openPeace == 0 && <spa>&#x25BC;</spa>}</span> The Peace Ambassadors</span>
+                            <span className='text-zinc-700' onClick={handleOpenPeace}><span>&emsp;{openPeace == 1 && <span>&#x25B6;</span>}{openPeace == 0 && <spa>&#x25BC;</spa>}</span> The Peace Ambassadors</span>
                             <span>Season 2023</span>
                         </span> 
                         {openPeace == 0 &&<div style={{paddingLeft: '5.2%'}}>
@@ -107,7 +107,7 @@ const Allinfos = () => {
                         </li>
                         <li>
                         <span class="flex justify-between">
-                            <span className='text-zinc-700' onClick={handleOpenCreatech}><span>&emsp;{openCreatech == 1 && <span>▶️</span>}{openCreatech == 0 && <span>&#x25BC;</span>}</span> Createch</span>
+                            <span className='text-zinc-700' onClick={handleOpenCreatech}><span>&emsp;{openCreatech == 1 && <span>&#x25B6;</span>}{openCreatech == 0 && <span>&#x25BC;</span>}</span> Createch</span>
                             <span>Season 2022</span>
                         </span>
                         {openCreatech == 0 &&<div style={{paddingLeft: '5.2%'}}>
@@ -120,7 +120,7 @@ const Allinfos = () => {
                         
                         <li>
                         <span class="flex justify-between">
-                            <span className='text-zinc-700'onClick={handleOpenAlphabit}><span>&emsp;{openAlphabit == 1 && <span>▶️</span>}{openAlphabit == 0 && <span>&#x25BC;</span>}</span> AlphaBit&apos;s AI</span>
+                            <span className='text-zinc-700'onClick={handleOpenAlphabit}><span>&emsp;{openAlphabit == 1 && <span>&#x25B6;</span>}{openAlphabit == 0 && <span>&#x25BC;</span>}</span> AlphaBit&apos;s AI</span>
                             <span>Season 2022</span>
                         </span>
                         {openAlphabit == 0 &&<div style={{paddingLeft: '5.2%'}}>
