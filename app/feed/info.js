@@ -55,6 +55,8 @@ const Info = () => {
             </div>
             <hr/>
             <br></br>
+
+            
             
 
     </div>

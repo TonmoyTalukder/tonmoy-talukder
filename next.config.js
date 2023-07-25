@@ -13,6 +13,12 @@ module.exports = {
           port: '',
           pathname: '/X7QwZ6Y/Tonmoy-Talukder.jpg',
         },
+        // {
+        //   protocol: 'https',
+        //   hostname: 'i.ibb.co',
+        //   port: '',
+        //   pathname: '/X7QwZ6Y/Tonmoy-Talukder.jpg',
+        // },
       ],
     },
   }

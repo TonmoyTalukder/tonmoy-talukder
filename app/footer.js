@@ -42,6 +42,10 @@ const Footer = () => {
         <br></br>
         </div> 
 
+        {/* <div className='col-span-4 flex justify-center'>
+        <iframe scrolling="no" frameborder="0" allowtransparency="true" width="150" height="150" src="//rf.revolvermaps.com/w/6/a/a2.php?i=5b7vr82xdt7&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=verdana&amp;l=0"></iframe>
+        </div> */}
+
         <div style={{paddingRight: "5.25rem"}} class="col-span-6 text-special">
             <h2 class="text-xl font-semibold">I write in: 🖊️</h2>
             <ul class="text-right">

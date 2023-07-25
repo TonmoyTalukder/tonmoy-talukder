@@ -7,6 +7,7 @@ import Info from './feed/info'
 import Projects from './feed/project'
 import Footer from './footer'
 import Header from './header'
+import Map from './components/Revolver'
 
 export default function Home() {
   return (
@@ -39,8 +40,30 @@ export default function Home() {
       <Publications/>
       <br></br>
       <Projects/>
+      {/* <br></br> */}
+      {/* <Map/> */}
       <br></br>
       <Info/>
+      <br></br>
+      <div className='flex justify-center'>
+      {/* <iframe scrolling="no" frameborder="0" width="220" height="220" src="//rf.revolvermaps.com/w/1/a/a2.php?i=5a268fi35co&amp;s=220&amp;m=0&amp;v=false&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000"></iframe> */}
+      <iframe scrolling="no" frameborder="0" allowtransparency="true" width="320" height="320" src="//rf.revolvermaps.com/w/6/a/a2.php?i=5b7vr82xdt7&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=verdana&amp;l=0"></iframe>
+    {/* <a href="https://www.revolvermaps.com/livestats/59b76zlhpq1/"  target="_blank" rel="noreferrer">
+      <img
+        src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/59b76zlhpq1.png"
+        width="100%"
+        // height="128"
+        alt="Map"
+        style={{ border: 2 }}
+      />
+    </a> */}
+    {/* <Map/> */}
+  </div>
+  
+  
+  <br></br>
+      <hr/>
+      <hr/>
     </div>
   </div>
 </div>
