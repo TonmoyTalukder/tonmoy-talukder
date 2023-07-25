@@ -140,7 +140,7 @@ const Allinfos = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span className="font-semibold">🎓 Ahsanullah University of Science and Technology, Dhaka 1208</span> <br></br>
-                    <span className="text-slate-800">Bachelor of Science in Computer Science and Engineering</span> (<span className="text-sky-400">2018 - 2023</span>)</p>
+                    <span className="font-medium text-slate-800">Bachelor of Science in Computer Science and Engineering</span> (<span className="text-sky-400">2018 - 2023</span>)</p>
                     <p className="text-justify"><span className="font-semibold">Research Experience: </span> Natural Language Processing, Computer Vision and Multimodal Deep Learning</p>
                     <p className="text-justify"><span className="font-semibold">Technical Skills: </span> <span>Pytorch, Tensorflow, Python, MERN Stack (Full) Development, Javascript, SQL, C++ and C.</span></p>
                     </li>
@@ -149,7 +149,7 @@ const Allinfos = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span className="font-semibold">🎓 Agriculture University College, Mymensingh 2202</span> <br></br>
-                    <span className="text-slate-800">Higher Secondary (Science)</span> (<span className="text-sky-400">2015 - 2027</span>)</p>
+                    <span className="font-medium text-slate-800">Higher Secondary (Science)</span> (<span className="text-sky-400">2015 - 2027</span>)</p>
                     <p className="text-justify"><span className="font-semibold">Extra Curricular Activities: </span> District level programming contest.</p>
                     <p className="text-justify"><span className="font-semibold">Technical Skills: </span> <span>HTML, CSS and C.</span></p>
                     </li>
@@ -158,7 +158,7 @@ const Allinfos = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span className="font-semibold">🎓 St. Joseph Higher Secondary School, Dhaka 1207</span> <br></br>
-                    <span className="text-slate-800">Higher Secondary (Science)</span> (<span className="text-sky-400">2015</span>)</p>
+                    <span className="font-medium text-slate-800">Higher Secondary (Science)</span> (<span className="text-sky-400">2015</span>)</p>
                     <p className="text-justify"><span className="font-semibold">Extra Curricular Activities: </span> Writing competition.</p>
                     <p className="text-justify"><span className="font-semibold">Technical Skills: </span> <span>HTML.</span></p>
                     </li>
@@ -167,7 +167,7 @@ const Allinfos = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p className="text-justify"><span className="font-semibold">🎓 Kalmakanda Government Pilot High School, Kalmakanda, Netrakona, Mymensingh 2430</span> <br></br>
-                    <span className="text-slate-800">Secondary School</span> (<span className="text-sky-400">2010 - 2015</span>)</p>
+                    <span className="font-medium text-slate-800">Secondary School</span> (<span className="text-sky-400">2010 - 2015</span>)</p>
                     <p className="text-justify"><span className="font-semibold">Extra Curricular Activities: </span> District level Science Fair Project competition, National Scout Camping, Drama competition.</p>
                     </li>
                 </ul>
