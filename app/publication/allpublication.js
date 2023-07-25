@@ -63,11 +63,11 @@ const Research = () => {
 
            <span className='font-semibold'>Most recent publication updates can be found on the following profiles:</span>
             <ul>
-                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><span className="text-sky-400 hover:text-orange-400">
+                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&amp;hl=en"><span className="text-sky-400 hover:text-orange-400 hover:underline">
                     <div className="social-icon">
                     <FaGraduationCap style={{color: '#3295EF'}} /><span> &nbsp;Google Scholar</span>
                     </div></span></a></li>
-                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Tonmoy-Talukder-2"><span className="text-sky-400 hover:text-orange-400">
+                <li><a className="social-icon" target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Tonmoy-Talukder-2"><span className="text-sky-400 hover:text-orange-400 hover:underline">
                 <div className="social-icon">
                     <FaResearchgate style={{color: '#5BF8B6'}} /><span> &nbsp;ResearchGate</span>
                     </div>
@@ -92,10 +92,10 @@ const Research = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">📌 [September, 2023]</span> <span className="text-sky-700 font-bold">Rank Your Summaries: Enhancing Bengali Text Summarization via Ranking-based Approach</span></p>
-                    <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, <span className="font-semibold text-orange-500">Tonmoy Talukder</span>*, Rafin Alam Khan Sotez, and Md. Tanvir Rouf Shawon</p> 
+                    <p className="text-justify"><span className="font-semibold">Authors: </span> G. M. Shahariar*, <span className="font-semibold hover:text-orange-400">Tonmoy Talukder</span>*, Rafin Alam Khan Sotez, and Md. Tanvir Rouf Shawon</p> 
                     <span className="text-xs italic">(* denotes equal contribution, names are listed in alphabetical order).</span>
-                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">International Conference on Big Data, IoT and Machine Learning </span><span  className="text-sky-400 hover:text-orange-400"> <a href="https://confbim.com/">[BIM 2023]</a></span></p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenAbstract}>Abstract</span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://arxiv.org/pdf/2307.07392.pdf" target="_blank" rel="noreferrer">PDF</a></span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Rank-Your-Summaries-Enhancing-Bengali-Text-Summarization-via-Ranking-based-Approach" target="_blank" rel="noreferrer">Code & Dataset</a></span>] [<span className="text-sky-400 hover:text-orange-400">Presentation</span>] [<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenBib}>Citation bib</span>]</p>
+                    <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">International Conference on Big Data, IoT and Machine Learning </span><span  className="text-sky-400 hover:text-orange-400 hover:underline"> <a href="https://confbim.com/">[BIM 2023]</a></span></p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenAbstract}>Abstract</span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://arxiv.org/pdf/2307.07392.pdf" target="_blank" rel="noreferrer">PDF</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/Rank-Your-Summaries-Enhancing-Bengali-Text-Summarization-via-Ranking-based-Approach" target="_blank" rel="noreferrer">Code & Dataset</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline">Presentation</span>] [<span className="text-sky-400 hover:text-orange-400" onClick={handleOpenBib}>Citation bib</span>]</p>
                     {openAbstract == 0 &&
                         <div className="" style={{paddingLeft: '15%', paddingRight: '5%'}}>
                     <div className='accordion-container bg-zinc-300 rounded-md p-2'>

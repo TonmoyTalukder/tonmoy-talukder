@@ -13,7 +13,7 @@ const Projects = () => {
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">💻 [February, 2023]</span> <span className="text-sky-700 font-bold">Bangla-KeywordExtractor</span></p>
                     <p className="text-justify"><span className="font-semibold">Description: </span>BanglaBERT based keywords extractor of Bangla Sentences. This extractor works calculating cosine similarity of each word embedding with the mean embedding.</p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400"><a href="#">PyPl</a></span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Bangla-KeywordExtractor">GitHub Repository</a></span>]</p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="#">PyPl</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/Bangla-KeywordExtractor">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>     
                 <br></br>       
@@ -21,7 +21,7 @@ const Projects = () => {
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">💻 [January, 2023]</span> <span className="text-sky-700 font-bold">Bengali Hate Speech classification</span></p>
                     <p className="text-justify"><span className="font-semibold">Description: </span>NLP classification with different machine learning algorithms with hyperparameter fine tuning, Ensemble approaches.</p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-Classification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/Analysis-on-ML-Model-s-Classification-of-Bengali-Hate-Speech-in-Different-Social-Contexts">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>         
                 <br></br>    
@@ -32,7 +32,7 @@ const Projects = () => {
                     <b className="text-justify">Frontend:</b> JavaScript, React JS, Material UI <br></br>
                     <b className="text-justify">Backend:</b> C#, ASP.NET Framework <br></br>
                     <b className="text-justify">Database:</b> Entity Framework </p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/bookpedia-frontend">Frontend GitHub Repository</a></span>] [<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/InfiniteY-Lab/BookPediaAPIV0.0.12">Backend GitHub Repository</a></span>]</p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/bookpedia-frontend">Frontend GitHub Repository</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/InfiniteY-Lab/BookPediaAPIV0.0.12">Backend GitHub Repository</a></span>]</p>
                     </li>
                 </ul>           
                 <br></br>  
@@ -40,7 +40,7 @@ const Projects = () => {
                     <li>
                     <p className="text-justify"><span className="text-sm font-semibold">💻 [October, 2021]</span> <span className="text-sky-700 font-bold">Churning Telecom Company Prediction</span></p>
                     <p className="text-justify"><span className="font-semibold">Description: </span>Applied One-hot Encoding, Decision Tree classification, Grid Search & Cross-Validation, Confusion Matrix, classification report, and ROC-AUC.</p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder/Churning-Telecom-Company-Prediction">GitHub Repository</a></span>]</p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/Churning-Telecom-Company-Prediction">GitHub Repository</a></span>]</p>
                     </li>
                 </ul>            
             </div>

@@ -32,6 +32,7 @@ const Info = () => {
                     <li>
                     <p className="text-justify"><span className="font-semibold">🎓 Ahsanullah University of Science and Technology, Dhaka 1208</span> <br></br>
                     <span className="font-medium text-slate-800">Bachelor of Science in Computer Science and Engineering</span> (<span className="text-sky-400">2018-2023</span>)</p>
+                    <p className="text-justify"><span className="font-semibold">Supervisor:</span> <span className="text-orange-700 hover:text-orange-400 hover:underline"><a href="https://shahariar-shibli.github.io/" target="_blank" rel="noreferrer">Mr. G. M. Shahariar Shibli</a></span></p>
                     <p className="text-justify"><span className="font-semibold">Research Experience: </span> Natural Language Processing, Computer Vision and Multimodal Deep Learning</p>
                     <p className="text-justify"><span className="font-semibold">Technical Skills: </span> <span>Pytorch, Tensorflow, Python, MERN Stack (Full) Development, Javascript, SQL, C and C++.</span></p>
                     </li>
@@ -44,7 +45,7 @@ const Info = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span className="font-semibold">📧 Email: </span>
-                    <span className="text-orange-700"><a href="mailto:tonmoytalukder.cs@gmail.com">tonmoytalukder [dot] cs [at] gmail [dot] com</a></span></p>
+                    <span className="text-orange-700 hover:text-orange-400 hover:underline"><a href="mailto:tonmoytalukder.cs@gmail.com">tonmoytalukder [dot] cs [at] gmail [dot] com</a></span></p>
                     </li>
                     <li>
                     <p><span className="font-semibold">🌍 Live in: </span>

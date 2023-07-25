@@ -15,27 +15,27 @@ const Footer = () => {
             <li className="social-icon">
                 <div className="social-icon">
                     <FaGithub className="github-icon" />
-                    <span className="social-name text-orange-700 hover:text-orange-400"><a href="https://github.com/TonmoyTalukder" target="_blank" rel="noreferrer">GitHub</a></span>
+                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder" target="_blank" rel="noreferrer">GitHub</a></span>
                 </div>
             </li>
             <li className="social-icon">
                 <div className="social-icon">
                     <FaLinkedin className="linkedin-icon" />
-                    <span className="social-name text-orange-700 hover:text-orange-400"><a href="https://www.linkedin.com/in/tonmoytalukder/" target="_blank" rel="noreferrer">LinkedIn</a></span>
+                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://www.linkedin.com/in/tonmoytalukder/" target="_blank" rel="noreferrer">LinkedIn</a></span>
                 </div>
             </li>
             <li  className="social-icon">
                 <div className="social-icon">
                     {/* <FaHuggingFace className="huggingface-icon" /> */}
                     <Image src="/icons/huggingface.svg" alt="Hugging Face" width={24} height={24} />&nbsp;
-                    <span className="social-name text-orange-700 hover:text-orange-400"><a href="https://huggingface.co/tonmoytalukder" target="_blank" rel="noreferrer">HuggingFace</a></span>
+                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://huggingface.co/tonmoytalukder" target="_blank" rel="noreferrer">HuggingFace</a></span>
                 </div>
             </li>
             <li  className="social-icon">
                 <div className="social-icon">
                     {/* <FaTwitter className="twitter-icon" /> */}
-                    <span style={{paddingLeft: '8%'}}><a href="https://commons.wikimedia.org/wiki/File:X_logo_2023.svg#/media/File:X_logo_2023.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X logo 2023.svg" height="20" width="20"></img></a></span>
-                    <span className="social-name text-orange-700 hover:text-orange-400"><a href="https://twitter.com/TonmoyTweets" target="_blank" rel="noreferrer">&nbsp;&nbsp;Twitter</a></span>
+                    <span style={{paddingLeft: '8%'}}><a href="https://commons.wikimedia.org/wiki/File:X_logo_2023.svg#/media/File:X_logo_2023.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X logo 2023.svg" height="20" width="20"></img></a></span>&nbsp;&nbsp;
+                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://twitter.com/TonmoyTweets" target="_blank" rel="noreferrer">Twitter</a></span>
                 </div>
             </li>
         </ul>
@@ -48,13 +48,13 @@ const Footer = () => {
             <li class="social-icons-wrapper2">
             <div className="social-icon">
                 <FaBlogger className="blogger-icon" />
-                <span className="social-name"><span className="social-name text-orange-700 hover:text-orange-400"><a href="https://tonmoytalukder.blogspot.com/" target="_blank" rel="noreferrer">Blogger</a></span></span>
+                <span className="social-name"><span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://tonmoytalukder.blogspot.com/" target="_blank" rel="noreferrer">Blogger</a></span></span>
             </div>
             </li>
             <li class="social-icons-wrapper2">
             <div className="social-icon">
                 <FaMedium className="medium-icon" />
-                <span className="social-name"><span className="social-name text-orange-700 hover:text-orange-400"><a href="https://tonmoytalukder.medium.com/" target="_blank" rel="noreferrer">Medium</a></span></span>
+                <span className="social-name"><span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://tonmoytalukder.medium.com/" target="_blank" rel="noreferrer">Medium</a></span></span>
             </div>
             </li>
         </ul>
@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="social-icons-wrapper2">
             <div className="social-icon">
                 <FaEnvelope className="mail-icon" />
-                <span className="social-name"><span className="social-name text-orange-700 hover:text-orange-400"><a href="mailto:tonmoytalukder.cs@gmail.com" target="_blank" rel="noreferrer">Write E-Mail</a></span></span>
+                <span className="social-name"><span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="mailto:tonmoytalukder.cs@gmail.com" target="_blank" rel="noreferrer">Write E-Mail</a></span></span>
       </div>
         <div/>
     </div>
