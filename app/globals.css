@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes pulsate {
+  0%, 100%  {
+    color: #fdff88; /* Pink color */
+  }
+  50% {
+    color: #ff0000; /* Another shade of pink */
+  }
+}
+
+.pulsating-text {
+  animation: pulsate 1.3s infinite;
+}
+
+
 .my-4 {
   margin-top: 4rem;
   margin-bottom: 4rem;

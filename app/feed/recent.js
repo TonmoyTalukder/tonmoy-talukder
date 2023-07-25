@@ -5,6 +5,11 @@ const Recent = () => {
     
     <div className="mt-3">
 
+      {/* Announcement */}
+        {/* <div>
+        <p className='pulsating-text text-xl text-center font-mono underline underline-offset-8'>I am looking for a job in NLP/ML Engineer position.</p> <br></br>
+        </div> */}
+
         <h2 className="text-xl font-semibold">RECENT HIGHLIGHTS ⚡</h2>
         <hr/>
         <hr/>

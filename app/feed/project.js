@@ -49,7 +49,7 @@ const Projects = () => {
                     <b className="text-justify">Frontend:</b> JavaScript, React JS, Material UI <br></br>
                     <b className="text-justify">Backend:</b> C#, ASP.NET Framework <br></br>
                     <b className="text-justify">Database:</b> Entity Framework </p>
-                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/bookpedia-frontend">Frontend GitHub Repository</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/InfiniteY-Lab/BookPediaAPIV0.0.12">Backend GitHub Repository</a></span>]</p>
+                    <p className="text-justify">[<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder/bookpedia-frontend">Frontend GitHub Repository</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://github.com/InfiniteY-Lab/BookPediaAPIV0.0.12">Backend GitHub Repository</a></span>] [<span className="text-sky-400 hover:text-orange-400 hover:underline"><a href="https://youtu.be/TB-UPQwxOvo">YouTube</a></span>]</p>
                     </li>
                 </ul>                     
             </div>
