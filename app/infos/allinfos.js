@@ -94,24 +94,23 @@ const Allinfos = () => {
                     <span className="font-medium">Mentored Teams: </span> <br></br>
                     <ul>
                         <li>
-                        <span class="flex justify-between">
-                            <span className='text-zinc-700' onClick={handleOpenPeace}><span>&emsp;{openPeace == 1 && <span>&#x25B6;</span>}{openPeace == 0 && <spa>&#x25BC;</spa>}</span> The Peace Ambassadors</span>
-                            <span>Season 2023</span>
-                        </span> 
+                        
+                            <span className='text-zinc-700' onClick={handleOpenPeace}><span>&emsp;{openPeace == 1 && <span>&#x25B6;</span>}{openPeace == 0 && <spa>&#x25BC;</spa>}</span>Team:  The Peace Ambassadors</span>
                         {openPeace == 0 &&<div style={{paddingLeft: '5.2%'}}>
-                            <div className='bg-zinc-300 rounded-md p-2 text-neutral-800'>
+                            <div className='bg-zinc-300 rounded-md p-2 text-neutral-800 font-sans'>
+                            <span className='underline text-green-600'>Conducted in Season 2023</span><br></br>
                             <span className='font-medium'>Project Name</span>: SERENE <br></br>
                             <span className='font-medium'>Description</span>: Depression-based app. Implemented AI Diary, Firebase Authentication, AI Chatbot, AI Quiz along with other features.
                             </div>
                         </div>}
                         </li>
                         <li>
-                        <span class="flex justify-between">
-                            <span className='text-zinc-700' onClick={handleOpenCreatech}><span>&emsp;{openCreatech == 1 && <span>&#x25B6;</span>}{openCreatech == 0 && <span>&#x25BC;</span>}</span> Createch</span>
-                            <span>Season 2022</span>
-                        </span>
+    
+                            <span className='text-zinc-700' onClick={handleOpenCreatech}><span>&emsp;{openCreatech == 1 && <span>&#x25B6;</span>}{openCreatech == 0 && <span>&#x25BC;</span>}</span>Team:  Createch</span>
+                            
                         {openCreatech == 0 &&<div style={{paddingLeft: '5.2%'}}>
-                            <div className='bg-zinc-300 rounded-md p-2 text-neutral-800'>
+                            <div className='bg-zinc-300 rounded-md p-2 text-neutral-800 font-sans'>
+                            <span className='underline text-green-600'>Conducted in Season 2022</span><br></br>
                             <span className='font-medium'>Project Name</span>: ROOT<br></br>
                             <span className='font-medium'>Description</span>: Machine learning-based plant disease detection and blog app.
                             </div>
@@ -119,12 +118,12 @@ const Allinfos = () => {
                         </li>
                         
                         <li>
-                        <span class="flex justify-between">
-                            <span className='text-zinc-700'onClick={handleOpenAlphabit}><span>&emsp;{openAlphabit == 1 && <span>&#x25B6;</span>}{openAlphabit == 0 && <span>&#x25BC;</span>}</span> AlphaBit&apos;s AI</span>
-                            <span>Season 2022</span>
-                        </span>
+                      
+                            <span className='text-zinc-700'onClick={handleOpenAlphabit}><span>&emsp;{openAlphabit == 1 && <span>&#x25B6;</span>}{openAlphabit == 0 && <span>&#x25BC;</span>}</span>Team: AlphaBit&apos;s AI</span>
+                            
                         {openAlphabit == 0 &&<div style={{paddingLeft: '5.2%'}}>
-                            <div className='bg-zinc-300 rounded-md p-2 text-neutral-800'>
+                            <div className='bg-zinc-300 rounded-md p-2 text-neutral-800 font-sans'>
+                            <span className='underline text-green-600'>Conducted in Season 2022</span><br></br>
                             <span className='font-medium'>Project Name</span>: FITIFY <br></br>
                             <span className='font-medium'>Description</span>: Blog app on BMI and BMR with AI calculator to find BMI and BMR scores.
                             </div>
