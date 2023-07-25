@@ -10,7 +10,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="p-4 bg-gray-50 flex justify-end">
+    <nav className="p-3 bg-gray-50 flex justify-end">
       {/* Navigation Links for Large Screens */}
       <div className="hidden md:flex md:items-center">
         <Link href="/" className="text-gray-900 hover:text-orange-400 ml-4">Home</Link>
