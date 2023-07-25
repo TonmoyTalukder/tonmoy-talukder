@@ -33,14 +33,13 @@ const Footer = () => {
             </li>
             <li  className="social-icon">
                 <div className="social-icon">
-                    <FaTwitter className="twitter-icon" />
-                    <span className="social-name text-orange-700 hover:text-orange-400"><a href="https://twitter.com/TonmoyTweets" target="_blank" rel="noreferrer">Twitter</a></span>
+                    {/* <FaTwitter className="twitter-icon" /> */}
+                    <span style={{paddingLeft: '8%'}}><a href="https://commons.wikimedia.org/wiki/File:X_logo_2023.svg#/media/File:X_logo_2023.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X logo 2023.svg" height="20" width="20"></img></a></span>
+                    <span className="social-name text-orange-700 hover:text-orange-400"><a href="https://twitter.com/TonmoyTweets" target="_blank" rel="noreferrer">&nbsp;&nbsp;Twitter</a></span>
                 </div>
             </li>
-
         </ul>
         <br></br>
-
         </div> 
 
         <div style={{paddingRight: "5.25rem"}} class="col-span-6 text-special">
@@ -71,10 +70,13 @@ const Footer = () => {
         </div>
 
         </div>
+        <div style={{paddingLeft: "5.25rem", marginTop: "-3%"}} className='font-medium text-left'><strong>Last update</strong>: September, 2023</div>
 
-        <p style={{paddingLeft: "5.25rem"}} class="text-left">&copy; {currentYear}, Tonmoy Talukder. All rights reserved. <br></br>
-        <span class="font-sans text-xs subpixel-antialiased text-slate-500">This site has been developed by myself using NEXT.JS.</span>
-        </p>
+        <div style={{paddingLeft: "5.25rem"}} class="text-left">
+            <br></br>
+            <span>&copy; {currentYear}, Tonmoy Talukder. All rights reserved.</span><br></br>
+            <span class="font-sans text-xs subpixel-antialiased text-slate-500">This site has been developed by myself using NEXT.JS.</span>
+        </div>
         <br></br>
         <br></br>
 

@@ -9,15 +9,18 @@ const Info = () => {
         <hr/>
         <hr/>
             <div>
-                <h3 className="text-lg font-bold text-sky-800">Experience</h3>
+                <h3 className="text-lg font-bold text-sky-800">Teaching Experience</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <p><span className="font-semibold">💼 Technovation</span> <br></br>
-                    <span className="text-slate-800">Mentor</span> (<span className="text-sky-400">December, 2021 -</span>)</p>
+                    <span className="font-medium text-slate-800">Mentor</span> (<span className="text-sky-400">December, 2021 - Present</span>)</p>
                     <p className="text-justify">
-                    Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls. My responsibility is mentoring students for their projects. <br></br>
-                    <span className="font-semibold">Work Nature: </span> Volunteer
-                    </p>
+                    Technovation is a program of Iridescent, which is a non-profit organization in the United States. It is the world&apos;s largest and longest running tech competition for girls.<br></br> <span className="font-medium">Responsible for... </span><br></br></p>
+                    <ul className="text-justify">
+                        <li>&emsp;• Mentoring students to learn App Development, AI & Machine Learning Tools</li>
+                        <li>&emsp;• Helping students to develop projects for the Technovation Global Competition</li>
+                    </ul>
+                    <span className="font-medium">Work Nature: </span> Volunteer
                     </li>
                 </ul>
             </div>
