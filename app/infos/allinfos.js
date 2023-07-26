@@ -95,7 +95,7 @@ const Allinfos = () => {
                     <ul>
                         <li>
                         
-                            <span className='text-zinc-700' onClick={handleOpenPeace}><span>&emsp;{openPeace == 1 && <span>&#x25B6;</span>}{openPeace == 0 && <spa>&#x25BC;</spa>}</span>Team:  The Peace Ambassadors</span>
+                            <span className='text-zinc-700' onClick={handleOpenPeace}><span>&emsp;{openPeace == 1 && <span>▶️</span>}{openPeace == 0 && <spa>▼</spa>}</span>&nbsp;Team:  The Peace Ambassadors</span>
                         {openPeace == 0 &&<div style={{paddingLeft: '5.2%'}}>
                             <div className='bg-zinc-300 rounded-md p-2 text-neutral-800 font-sans'>
                             <span className='underline text-green-600'>Conducted in Season 2023</span><br></br>
@@ -106,7 +106,7 @@ const Allinfos = () => {
                         </li>
                         <li>
     
-                            <span className='text-zinc-700' onClick={handleOpenCreatech}><span>&emsp;{openCreatech == 1 && <span>&#x25B6;</span>}{openCreatech == 0 && <span>&#x25BC;</span>}</span>Team:  Createch</span>
+                            <span className='text-zinc-700' onClick={handleOpenCreatech}><span>&emsp;{openCreatech == 1 && <span>▶️</span>}{openCreatech == 0 && <span>▼</span>}</span>&nbsp;Team:  Createch</span>
                             
                         {openCreatech == 0 &&<div style={{paddingLeft: '5.2%'}}>
                             <div className='bg-zinc-300 rounded-md p-2 text-neutral-800 font-sans'>
@@ -119,7 +119,7 @@ const Allinfos = () => {
                         
                         <li>
                       
-                            <span className='text-zinc-700'onClick={handleOpenAlphabit}><span>&emsp;{openAlphabit == 1 && <span>&#x25B6;</span>}{openAlphabit == 0 && <span>&#x25BC;</span>}</span>Team: AlphaBit&apos;s AI</span>
+                            <span className='text-zinc-700'onClick={handleOpenAlphabit}><span>&emsp;{openAlphabit == 1 && <span>▶️</span>}{openAlphabit == 0 && <span>▼</span>}</span>&nbsp;Team: AlphaBit&apos;s AI</span>
                             
                         {openAlphabit == 0 &&<div style={{paddingLeft: '5.2%'}}>
                             <div className='bg-zinc-300 rounded-md p-2 text-neutral-800 font-sans'>
