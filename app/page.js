@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     // Add your script here
     const script = document.createElement('script');
-    script.src = '//rf.revolvermaps.com/0/0/6.js?i=58mzz8jl3nk&m=0&c=ff0000&cr1=ffffff&f=verdana&l=0&s=220';
+    script.src = '//rf.revolvermaps.com/0/0/6.js?i=5k2gkdgyi81&m=0&c=ff0000&cr1=ffffff&f=verdana&l=0&s=220';
     script.async = true;
 
     // Load the script inside the specific div with the id "mapContainer"
