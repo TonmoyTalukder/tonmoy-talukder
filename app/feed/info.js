@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Info = () => {
+    
   return (
     
     <div className="mt-3">
@@ -55,9 +56,12 @@ const Info = () => {
             </div>
             <hr/>
             <br></br>
+            {/* <div>
+            <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=58mzz8jl3nk&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=verdana&amp;l=0&amp;s=220" async="async"></script>
+            <h1>Welcome to my page!</h1>
+    </div> */}
 
-            
-            
+
 
     </div>
 
