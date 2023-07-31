@@ -75,7 +75,7 @@ const Research = () => {
                         </p>
                     </li>
                     <li>
-                        <p className="text-left"> 
+                        <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
                         </p>
                     </li>
@@ -86,7 +86,7 @@ const Research = () => {
                     </li>
                     <li>
                         <p className="text-justify"> 
-                            <span className="text-amber-800 font-semibold">🔨 Multimodal Image and Text classNameification using Pre-trained Transformers</span>
+                            <span className="text-amber-800 font-semibold">🔨 Multimodal Image and Text Classification using Pre-trained Transformers</span>
                         </p>
                     </li>
                     <li>
