@@ -167,7 +167,7 @@ const Allinfos = () => {
                 <br></br>
                 <ul style={{listStyleType: "none"}}>
                     <li>
-                    <p className="text-justify"><span className="font-semibold">🎓 Kalmakanda Government Pilot High School, Kalmakanda, Netrakona, Mymensingh 2430</span> <br></br>
+                    <p className="text-justify"><span className="font-semibold">🎓 Kalmakanda Government Pilot High School, Kalmakanda 2430, Netrokona</span> <br></br>
                     <span className="font-medium text-slate-800">Secondary School</span> (<span className="text-sky-400">2010 - 2015</span>)</p>
                     <p className="text-justify"><span className="font-semibold">Extra Curricular Activities: </span> District level Science Fair Project competition, National Scout Camping, Drama competition.</p>
                     </li>
