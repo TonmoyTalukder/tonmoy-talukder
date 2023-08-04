@@ -17,6 +17,13 @@ const Myresume = () => {
         link.download = 'Resume-of-Tonmoy-Talukder.pdf'; // Set the desired filename for the downloaded file
         link.click();
     };
+    const handleDownloadResumeWeb = () => {
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/uc?id=1CHvBWRhWtc1GIteoHdRtbUrDKkzbT1Mx';
+        link.target = '_blank';
+        link.download = 'Tonmoy-Talukder-Resume-Web-Developer.pdf'; // Set the desired filename for the downloaded file
+        link.click();
+    };
 
     const handleDownloadCV = () => {
         const link = document.createElement('a');
@@ -73,6 +80,9 @@ const Myresume = () => {
         <div>
         <br></br>
             <button onClick={handleDownloadResume} className="download-button">⬇️ Download My Resume</button>
+            <br></br>
+        <br></br>
+            <button onClick={handleDownloadResumeWeb} className="download-button">⬇️ Download My Resume (Web Developer)</button>
             <br></br>
             <br></br>
         </div>
