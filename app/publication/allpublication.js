@@ -113,7 +113,7 @@ const Research = () => {
                     {openBib == 0 &&
                         <div className="" style={{paddingLeft: '15%', paddingRight: '5%'}}>
                     <div className='accordion-container bg-zinc-300 rounded-md p-2'>
-                            <div><button className='bg-zinc-700 text-white hover:bg-orange-400 rounded-md p-1' onClick={handleCopy}>Copy Abstract</button></div>
+                            <div><button className='bg-zinc-700 text-white hover:bg-orange-400 rounded-md p-1' onClick={handleCopy}>Copy Citation</button></div>
                             <br></br>
                         <p className="text-left text-sm font-mono text-neutral-800"><span ref={spanRef}>
                         @article&#123;shahariar2023rank,<br></br>
