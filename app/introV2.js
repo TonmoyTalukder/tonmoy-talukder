@@ -1,5 +1,5 @@
 'use client'
-import {React, useRef, useEffect} from 'react';
+import {React, useRef, useEffect, useState} from 'react';
 import Image from 'next/image'
 import Typed from 'typed.js';
 // import Typewriter from 'typewriter-effect';
@@ -25,6 +25,13 @@ const IntroV2 = () => {
     }
   }, []);
 
+  const [textToSpeak, setTextToSpeak] = useState('Tohn-moy Tah-LOOk-dahr');
+
+  const speak = () => {
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+    window.speechSynthesis.speak(utterance);
+  };
+
   return (
     // <div style={{margin: '2rem'}}>
     //   <h2 className="text-lg font-semibold">Tonmoy Talukder</h2>
@@ -39,15 +46,16 @@ const IntroV2 = () => {
       </div>
       <br></br>
     <div className="mt-2">
-      <h1 className="text-2xl font-bold text-center">Tonmoy Talukder</h1> <br></br>
+      <h1 className="text-2xl font-bold text-center">Tonmoy Talukder</h1><h3 className='text-center'>[tɒnˈmɔɪ təˈluːkdər] <button onClick={speak}>🔊</button></h3> <br></br>
       {/* <Image src="https://i.ibb.co/X7QwZ6Y/Tonmoy-Talukder.jpg" className="h-60 w-60 rounded-full mx-auto" 
       width={800}
       height={500}
       alt="Image"/> */}
-      <p className="text-center">
+      <p className="text-center h-7">
       <span style={{text: 'bold'}} ref={el} />
       </p>
 
+      <br></br>
       <br></br>
 
       <Image
