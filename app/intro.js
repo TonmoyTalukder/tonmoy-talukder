@@ -58,7 +58,7 @@ const Intro = () => {
       width={800}
       height={500}
       alt="Image"/> */}
-      <p className="text-center">
+      <p className="text-center h-7">
       <span style={{text: 'bold'}} ref={el} />
       </p>
 

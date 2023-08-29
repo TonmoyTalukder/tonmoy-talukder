@@ -66,7 +66,7 @@ const Allinfos = () => {
         <p className="text-justify">
           Data science, machine learning, deep learning, and artificial intelligence are some of my favorite computer science fields. Despite the fact that web development has always attracted my curiosity. I have MERN Stack development expertization. <br></br>
 
-          Python development, as well as Android and iOS app development, are also areas of interest for me. <br></br>
+          Python development is also an areas of interest for me. <br></br>
 
           I enjoy reading blogs about literature, history, and technology in addition to them.
         </p>

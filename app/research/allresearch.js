@@ -41,12 +41,14 @@ const Research = () => {
             I am passionate about researching the utilization of natural language processing, computer vision, and multimodal learning. I am particularly interested in how to utilize these technologies to improve the understanding and use of <i>low-resource languages</i>. Recently, I am actively engaged in multiple projects that revolve around <i>text summarization</i>, <i>text generation</i>, <i>text classification</i>, <i>question answering</i>, and <i>image captioning</i> within this domain. I am also interested in understanding how machine learning models interact with data representations during training, and how this can be used to improve their performance.
             </p>
         </div>
+        <br></br>
         <hr/>
         <br></br>    
         <h2 className="text-lg font-semibold">Research Interest</h2>
         <hr/>
         <br></br>
         My research interest lies in <span className="text-sky-700 hover:text-orange-400">Natural Language Processing</span>, <span className="text-sky-700 hover:text-orange-400">Natural Language Generation</span>, <span className="text-sky-700 hover:text-orange-400">&quot;low resource&quot; language</span>, <span className="text-sky-700 hover:text-orange-400">Multimodal Deep Learning</span>, <span className="text-sky-700 hover:text-orange-400">Computer Vision</span>, and <span className="text-sky-700 hover:text-orange-400">Human-Computer Interaction</span>. Moreover, I am dedicated to exploring how machine learning models interact with data representations during training to enhance their performance.
+        <br></br>
         <br></br>
         <hr/>
         <br></br>
