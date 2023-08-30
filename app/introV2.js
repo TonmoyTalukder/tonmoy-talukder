@@ -46,7 +46,7 @@ const IntroV2 = () => {
       </div>
       <br></br>
     <div className="mt-2">
-      <h1 className="text-2xl font-bold text-center">Tonmoy Talukder</h1><h3 className='text-center'>[tɒnˈmɔɪ təˈluːkdər] <button onClick={speak}>🔊</button></h3> <br></br>
+      <h1 className="text-2xl font-bold text-center">Tonmoy Talukder <span className='font-normal text-sm text-stone-600'>(He/Him)</span></h1><h3 className='text-center'>[tɒnˈmɔɪ təˈluːkdər] <button onClick={speak}>🔊</button></h3> <br></br>
       {/* <Image src="https://i.ibb.co/X7QwZ6Y/Tonmoy-Talukder.jpg" className="h-60 w-60 rounded-full mx-auto" 
       width={800}
       height={500}
