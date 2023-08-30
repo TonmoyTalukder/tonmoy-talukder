@@ -86,7 +86,7 @@ const Intro = () => {
       <br></br>
       
       {/* <br></br> */}
-      <strong>Collaboration.</strong> From a collaborative perspective, there are numerous opportunities to learn from others. As of now, I am actively engaged in research with my undergraduate advisor. Additionally, I have experience in collaborative research with various faculty members at my undergraduate institution, including <span className="text-orange-700 hover:text-orange-400 hover:underline"><a href="https://www.aust.edu/cse/faculty_member/mr_md_tanvir_rouf_shawo" target="_blank" rel="noreferrer">Md. Tanvir Rouf Shawon</a></span>. <i>I would greatly appreciate receiving an invitation for a <span className="font-medium">research collaboration</span> in the fields of Natural Language Generation, Computer Vision, and Human-Computer Interaction.</i>
+      <strong>Collaboration.</strong> From a collaborative perspective, there are numerous opportunities to learn from others. As of now, I am actively engaged in research with my undergraduate advisor. Additionally, I have experience in collaborative research with various faculty members at my undergraduate institution, including <span className="text-orange-700 hover:text-orange-400 hover:underline"><a href="https://www.aust.edu/cse/faculty_member/mr_md_tanvir_rouf_shawo" target="_blank" rel="noreferrer">Md. Tanvir Rouf Shawon</a></span>. <br></br><i>I would greatly appreciate receiving an invitation for a <span className="font-medium">research collaboration</span> in the fields of Natural Language Generation, Computer Vision, and Human-Computer Interaction.</i>
       </p>
     </div>
     <hr/>
