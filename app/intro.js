@@ -74,7 +74,7 @@ const Intro = () => {
       <br></br>
       <p className="text-center">
         {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://drive.google.com/file/d/1WF1xDHIyE3c1oATPgM1ZpZMPhj0hAfUw/view" target="_blank">Curriculum Vitae</a></span> | <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://www.linkedin.com/in/tonmoytalukder/" target="_blank">LinkedIn</a></span> | <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder" target="_blank">GitHub</a></span> | <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&hl=en" target="_blank">Google Scholar</a></span>
+      <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://drive.google.com/file/d/1nb4uVV8NDuStjwUTlEvjR7OziyaP9RsR/view" target="_blank">Resume</a></span> | <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://www.linkedin.com/in/tonmoytalukder/" target="_blank">LinkedIn</a></span> | <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://github.com/TonmoyTalukder" target="_blank">GitHub</a></span> | <span className="text-center text-orange-700 hover:text-orange-400 hover:underline"><a href="https://scholar.google.com/citations?user=_6Nj60QAAAAJ&hl=en" target="_blank">Google Scholar</a></span>
       </p>
       <p className="text-justify">
       <br></br>
