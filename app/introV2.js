@@ -60,7 +60,7 @@ const IntroV2 = () => {
 
       <Image
         src="https://i.ibb.co/X7QwZ6Y/Tonmoy-Talukder.jpg"
-        alt="Image"
+        alt="Photograph of Tonmoy Talukder"
         width={200}
         height={200}
         className="rounded-full mx-auto"
