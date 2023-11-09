@@ -25,7 +25,7 @@ const Allrecent = () => {
             <ul style={{listStyleType: "none"}}>
                 <li className='py-2'>
                 <p className="text-justify"><span className="text-sm font-semibold">[September, 2023]</span> One Paper <span style={{color: 'green'}}>published</span> at <span className="italic ">
-                <span className="text-sky-600 hover:text-orange-400 hover:underline"><a href="https://confbim.com/" target="_blank" rel="noreferrer">BIM 2023</a></span></span></p>
+                <span className="text-sky-600 hover:text-orange-400 hover:underline"><a href="https://confbim.com/" target="_blank" rel="noreferrer">BIM 2023</a></span></span>.</p>
                 {/* , Springer Lecture Notes in Networks and Systems. */}
                 </li>
                 <li className='py-2'>
