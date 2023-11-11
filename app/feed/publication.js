@@ -122,7 +122,7 @@ const Publications = () => {
             <br></br>
             
             <div>
-                <h3 className="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
+                {/* <h3 className="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                     <div className="text-justify"> 
@@ -133,7 +133,7 @@ const Publications = () => {
                     <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">The 2023 Conference on Empirical Methods in Natural Language Processing </span>
                     <span  className="text-sky-400 hover:text-orange-400 hover:underline"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span></p> 
                     </li>
-                </ul>
+                </ul> */}
             </div>
             <hr/>
             <br></br>
@@ -142,14 +142,19 @@ const Publications = () => {
                 <ul style={{listStyleType: "none"}}>
                     <li>
                         <p className="text-left"> 
-                            <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
+                            <span className="text-amber-800 font-semibold">🔨 Bangla Key2Text: Text Generation from Keywords in Bengali</span>
                         </p>
                     </li>
                     <li>
+                        <p className="text-left"> 
+                            <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
+                        </p>
+                    </li>
+                    {/* <li>
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨&#160;Cross Lingual Key2Text: Bengali Text Generation from Cross-Lingual Keywords</span>
                         </p>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         <hr/>

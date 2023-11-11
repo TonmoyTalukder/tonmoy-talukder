@@ -65,7 +65,7 @@ const Research = () => {
     
             <br></br>
             <div>
-                <h3 className="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
+                {/* <h3 className="text-lg font-bold text-indigo-700">Under Review 🔎</h3>
                 <ul style={{listStyleType: "none"}}>
                     <li>
                         <p className="text-justify"> 
@@ -76,13 +76,18 @@ const Research = () => {
                     <p className="text-justify"><span className="text-sm font-semibold">Conference: </span> <span className="italic">The 2023 Conference on Empirical Methods in Natural Language Processing </span>
                     <span  className="text-sky-400 hover:text-orange-400 hover:underline"> <a href="https://2023.emnlp.org/">[EMNLP 2023]</a></span></p>
                     </li>
-                </ul>
+                </ul> */}
             </div>
             <hr/>
             <br></br>
             <div>
                 <h3 className="text-lg font-bold text-orange-500">Ongoing Works 📢</h3>
                 <ul style={{listStyleType: "none"}}>
+                    <li>
+                        <p className="text-justify"> 
+                            <span className="text-amber-800 font-semibold">🔨 Bangla Key2Text: Text Generation from Keywords in Bengali</span>
+                        </p>
+                    </li>
                     <li>
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Bangla Key2Text V2: Bengali Text Generation from Stemmed Keywords</span>
