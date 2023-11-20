@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className="social-icon">
                     {/* <FaTwitter className="twitter-icon" /> */}
                     <span style={{paddingLeft: '8%'}}><a href="https://commons.wikimedia.org/wiki/File:X_logo_2023.svg#/media/File:X_logo_2023.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X logo 2023.svg" height="20" width="20"></img></a></span>&nbsp;&nbsp;
-                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://twitter.com/TonmoyTalukder_" target="_blank" rel="noreferrer">X</a></span>
+                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://twitter.com/TonmoyTalukder_" target="_blank" rel="noreferrer">X (Former Twitter)</a></span>
                 </div>
             </li>
         </ul>
