@@ -35,12 +35,12 @@ const Footer = () => {
                 <div className="social-icon">
                     {/* <FaTwitter className="twitter-icon" /> */}
                     <span style={{paddingLeft: '8%'}}><a href="https://commons.wikimedia.org/wiki/File:X_logo_2023.svg#/media/File:X_logo_2023.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X logo 2023.svg" height="20" width="20"></img></a></span>&nbsp;&nbsp;
-                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://twitter.com/TonmoyTweets" target="_blank" rel="noreferrer">Twitter</a></span>
+                    <span className="social-name text-orange-700 hover:text-orange-400 hover:underline"><a href="https://twitter.com/TonmoyTalukder_" target="_blank" rel="noreferrer">X</a></span>
                 </div>
             </li>
         </ul>
         <br></br>
-        </div> 
+        </div>  
 
         {/* <div className='col-span-4 flex justify-center'>
         <iframe scrolling="no" frameborder="0" allowtransparency="true" width="150" height="150" src="//rf.revolvermaps.com/w/6/a/a2.php?i=5b7vr82xdt7&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=verdana&amp;l=0"></iframe>
