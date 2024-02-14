@@ -83,7 +83,7 @@ const Research = () => {
             <div>
                 <h3 className="text-lg font-bold text-orange-500">Ongoing Works 📢</h3>
                 <ul style={{listStyleType: "none"}}>
-                    <li>
+                    {/* <li>
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Bangla Key2Text: Text Generation from Keywords in Bengali</span>
                         </p>
@@ -92,17 +92,17 @@ const Research = () => {
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Bangla Key2Text V2: Bengali Text Generation from Stemmed Keywords</span>
                         </p>
-                    </li>
+                    </li> */}
                     <li>
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
                         </p>
                     </li>
-                    <li>
+                    {/* <li>
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Cross Lingual Key2Text: Bengali Text Generation from Cross-Lingual Keywords</span>
                         </p>
-                    </li>
+                    </li> */}
                     <li>
                         <p className="text-justify"> 
                             <span className="text-amber-800 font-semibold">🔨 Multimodal Image and Text Classification using Pre-trained Transformers</span>

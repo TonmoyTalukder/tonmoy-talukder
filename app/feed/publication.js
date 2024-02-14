@@ -140,11 +140,11 @@ const Publications = () => {
             <div>
                 <h3 className="text-lg font-bold text-orange-500">Ongoing Works 📢</h3>
                 <ul style={{listStyleType: "none"}}>
-                    <li>
+                    {/* <li>
                         <p className="text-left"> 
                             <span className="text-amber-800 font-semibold">🔨 Bangla Key2Text: Text Generation from Keywords in Bengali</span>
                         </p>
-                    </li>
+                    </li> */}
                     <li>
                         <p className="text-left"> 
                             <span className="text-amber-800 font-semibold">🔨 Image2Cap: Bengali Caption Generation from Images using Pre-trained Transformers</span>
