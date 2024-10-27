@@ -11,6 +11,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .pulsating-text {
   animation: pulsate 1.3s infinite;
 }

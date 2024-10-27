@@ -1,24 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        port: '',
+        pathname: '/X7QwZ6Y/Tonmoy-Talukder.jpg',
+      },
+    ],
+  },
+  experimental: {
+    serverActions: true,
+  },
+  reactStrictMode: true,
+};
 
-// module.exports = nextConfig
-module.exports = {
-    output: 'export',
-    images: {
-      unoptimized: true,
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'i.ibb.co',
-          port: '',
-          pathname: '/X7QwZ6Y/Tonmoy-Talukder.jpg',
-        },
-        // {
-        //   protocol: 'https',
-        //   hostname: 'i.ibb.co',
-        //   port: '',
-        //   pathname: '/X7QwZ6Y/Tonmoy-Talukder.jpg',
-        // },
-      ],
-    },
-  }
+module.exports = nextConfig;
