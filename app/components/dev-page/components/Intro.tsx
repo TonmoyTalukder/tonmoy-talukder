@@ -116,10 +116,10 @@ export default function Intro() {
           <Link
             href="#contact"
             className="group bg-sky-600 text-white px-6 py-2 flex items-center gap-2 rounded-full hover:bg-sky-700 transition"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
+            // onClick={() => {
+            //   setActiveSection("Contact");
+            //   setTimeOfLastClick(Date.now());
+            // }}
           >
             Contact Me{" "}
             <BsArrowRight className="opacity-80 group-hover:translate-x-1 transition" />

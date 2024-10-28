@@ -16,11 +16,13 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+
 ] as const;
+
+// {
+//   name: "Contact",
+//   hash: "#contact",
+// },
 
 // export const experiencesData = [
 //   {
@@ -54,9 +56,9 @@ export const projectsData = [
     title: "Cheffy",
     description:
       "A recipe sharing social media platform with NextJs using TypeScript, that user can easily share recipe, vote or rate recipe. As admin user can manage recipe and users. The feed shows ranking based data with endless scrolling.Ranking calculates ratings, votes, logging user's food diet and many more. Users can be premium for one month to see premium recipes.",
-    tags: ["Next.js","Next UI", "TanStack Query","Typescript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    tags: ["Next.js", "Next UI", "TanStack Query", "Typescript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     imageUrl: "https://i.ibb.co.com/4ZKQCM3/all-devices-white.png",
-    link:"https://cheffy-client.vercel.app/",
+    link: "https://cheffy-client.vercel.app/",
     frontend: "https://github.com/TonmoyTalukder/cheffy-client",
     backend: "https://github.com/TonmoyTalukder/cheffy-server"
   },
@@ -64,9 +66,9 @@ export const projectsData = [
     title: "SportifyNow",
     description:
       "A sport facility booking platform with React + Vite using TypeScript, that user can easily book a sport facility with integrated payment system, review or earn rewards.",
-    tags: ["React","Redux", "Ant Design","Typescript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    tags: ["React", "Redux", "Ant Design", "Typescript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     imageUrl: "https://i.ibb.co.com/7YBJFkx/all-devices-white-1.png",
-    link:"https://sportify-now.vercel.app/",
+    link: "https://sportify-now.vercel.app/",
     frontend: "https://github.com/TonmoyTalukder/SportifyNow",
     backend: "https://github.com/TonmoyTalukder/Sports-Facility-Booking-Platform/tree/sportify-now-backend"
   },
@@ -74,9 +76,9 @@ export const projectsData = [
     title: "VerdantSpace",
     description:
       "A nursery e-commerce website allow users to browse, filter, and search for products, add products to their cart to place order. Additionally, there is a product and category management section for CRUD operations.",
-    tags: ["React","Redux", "Ant Design","Typescript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    tags: ["React", "Redux", "Ant Design", "Typescript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     imageUrl: "https://i.ibb.co.com/WPSJDVP/all-devices-white-2.png",
-    link:"https://verdant-space.vercel.app/",
+    link: "https://verdant-space.vercel.app/",
     frontend: "https://github.com/TonmoyTalukder/verdant-space",
     backend: "https://github.com/TonmoyTalukder/verdant-space-server"
   },
