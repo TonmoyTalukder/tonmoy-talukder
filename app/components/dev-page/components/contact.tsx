@@ -43,8 +43,8 @@ export default function Contact() {
 
     console.log(data);
 
-    const response2 = await fetch("https://portfolio-email-server.vercel.app/");
-    const data2 = await response2.json();
+    // const response2 = await fetch("https://portfolio-email-server.vercel.app/");
+    // const data2 = await response2.json();
     // console.log(data2);
 
     try {
