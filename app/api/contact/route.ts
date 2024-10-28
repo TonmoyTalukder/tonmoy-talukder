@@ -1,9 +1,10 @@
 import nodemailer from "nodemailer";
+import { NextRequest } from "next/server";
 
 // Force Next.js to treat this API route as dynamic
 export const dynamic = "force-dynamic";
 
-export async function POST(req: { json: () => PromiseLike<{ email: string; subject: string; message: string; }> }) {
+export async function POST(req: NextRequest) {
   try {
     const { email, subject, message } = await req.json();
 
