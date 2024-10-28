@@ -86,7 +86,7 @@ export default function Intro() {
 
         {/* Header Text */}
         <motion.h1
-          className="mt-2 px-4 text-3xl font-semibold !leading-[1.5] sm:text-4xl text-left"
+          className="mt-2 px-4 text-3xl font-semibold !leading-[1.5] sm:text-4xl text-center"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
