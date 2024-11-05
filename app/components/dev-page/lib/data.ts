@@ -108,6 +108,7 @@ export const skillsData = [
   "React Hook Form",
   "React Flow",
   "Framer Motion",
+  "Swiper Js",
   "Git",
   "Machine Learning",
   "Deep Learning"
