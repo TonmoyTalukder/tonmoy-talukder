@@ -72,18 +72,23 @@ export default function Project({
           )}
 
           <div className="flex flex-col items-left gap-1 my-2">
-            <Link href={frontend} target="_blank">
-              <p className="text-base font-semibold flex items-center gap-2 text-sky-700 hover:underline">
-                <FaGithub size={16} />
-                Frontend Repository
-              </p>
-            </Link>
-            <Link href={backend} target="_blank">
-              <p className="text-base font-semibold flex items-center gap-2 text-sky-700 hover:underline">
-                <FaGithub size={16} />
-                Backend Repository
-              </p>
-            </Link>
+            {frontend.length > 0 && (
+              <Link href={frontend} target="_blank">
+                <p className="text-base font-semibold flex items-center gap-2 text-sky-700 hover:underline">
+                  <FaGithub size={16} />
+                  Frontend Repository
+                </p>
+              </Link>
+            )}
+
+            {backend.length > 0 && (
+              <Link href={backend} target="_blank">
+                <p className="text-base font-semibold flex items-center gap-2 text-sky-700 hover:underline">
+                  <FaGithub size={16} />
+                  Backend Repository
+                </p>
+              </Link>
+            )}
           </div>
           <ul className="flex flex-wrap gap-2 mt-6 sm:mt-auto">
             {tags.map((tag, index) => (
