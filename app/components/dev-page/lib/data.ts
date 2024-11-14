@@ -65,8 +65,8 @@ export const projectsData = [
   {
     title: "AI Medi Assist",
     description:
-      "A Next.js application integrates with the GEMINI API, enabling users to upload medical clinical reports. The AI generates a summary of the report, which can be modified by the user. Additionally, the application features an AI-powered chat for users to gain further insights into the report and explore recommended next steps in their medical journey.",
-    tags: ["Next.js", "Shadcn UI", "Typescript", "Tailwind CSS", "GEMINI API Integration"],
+      "A Next.js + LangChain application integrates with the GEMINI API, enabling users to upload medical clinical reports. The AI generates a summary of the report, which can be modified by the user. Additionally, the application features an AI-powered chat for users to gain further insights into the report and explore recommended next steps in their medical journey.",
+    tags: ["Next.js", "Shadcn UI", "Typescript", "Tailwind CSS", "LangChain", "GEMINI API Integration"],
     imageUrl: "https://i.ibb.co.com/WBJYWyb/all-devices-black.png",
     link: "https://cheffy-client.vercel.app/",
     frontend: "https://ai-medi-assist.vercel.app/",
