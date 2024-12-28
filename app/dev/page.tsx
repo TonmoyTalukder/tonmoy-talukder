@@ -1,24 +1,26 @@
-import React from "react";
-import Intro from "../components/dev-page/components/Intro";
-import Skills from "../components/dev-page/components/skills";
-import SectionDivider from "../components/dev-page/components/section-divider";
-import Contact from "../components/dev-page/components/contact";
-import Projects from "../components/dev-page/components/projects";
+import React from 'react';
+import Intro from '../components/dev-page/components/Intro';
+import Skills from '../components/dev-page/components/skills';
+import SectionDivider from '../components/dev-page/components/section-divider';
+import Contact from '../components/dev-page/components/contact';
+import Projects from '../components/dev-page/components/projects';
+import Blogs from '../components/dev-page/components/blogs';
 
 export default function Home() {
   return (
     <main
       style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}
     >
       <Intro />
       <SectionDivider />
-      <Projects/>
+      <Projects />
       <Skills />
+      <Blogs />
       <Contact />
     </main>
   );

@@ -46,6 +46,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.16"
+    "@types/nodemailer": "^6.4.16",
+    "@types/prismjs": "^1.26.5"
   }
 }
