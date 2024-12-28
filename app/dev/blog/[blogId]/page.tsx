@@ -19,16 +19,16 @@ type BlogData = {
 };
 
 export async function generateStaticParams() {
-  // Fetch the list of blog IDs at build time
   const response = await fetch(
     'https://tonmoy-portfolio-server.vercel.app/api/blog',
   );
+
   const blogsData = await response.json();
 
-  const blogs = blogsData?.data;
+  const blogs = blogsData?.data || [];
 
   return blogs.map((blog: { _id: string }) => ({
-    id: blog._id,
+    blogId: blog._id, // Match `params.blogId`
   }));
 }
 
