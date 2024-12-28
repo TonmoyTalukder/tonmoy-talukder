@@ -1,11 +1,14 @@
-"use client";
+'use client';
 
-import React from "react";
-// import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "../lib/hooks";
-import { skillsData } from "../lib/data";
-import SectionHeading from "./section-heading";
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useSectionInView } from '../lib/hooks';
+import SectionHeading from './section-heading';
+
+interface ISkill {
+  _id?: string;
+  name: string;
+}
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,7 +25,40 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView('Skills');
+
+  const [skillsData, setSkillsData] = useState<ISkill[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchSkills = async () => {
+      try {
+        const response = await fetch(
+          'https://tonmoy-portfolio-server.vercel.app/api/skill',
+        );
+        if (!response.ok) {
+          throw new Error('Failed to fetch skills data');
+        }
+        const data = await response.json();
+        setSkillsData(data || []);
+      } catch (err: any) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchSkills();
+  }, []);
+
+  if (loading) {
+    return <p>Loading skills...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   return (
     <motion.section
@@ -39,7 +75,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white border borderBlack rounded-xl px-5 py-3 hover:bg-gradient-to-br from-transparent to-sky-100 hover:shadow-lg"
-            key={index}
+            key={skill._id || index}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -48,7 +84,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            {skill.name}
           </motion.li>
         ))}
       </ul>

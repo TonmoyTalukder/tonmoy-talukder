@@ -1,13 +1,21 @@
-"use client";
+'use client';
 
-import { useRef, useState } from "react";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
-import { projectsData } from "../lib/data";
-import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+import { useRef, useState } from 'react';
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import Link from 'next/link';
+import { FaGithub } from 'react-icons/fa';
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  _id: string;
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: string;
+  link: string;
+  frontend?: string;
+  backend?: string;
+};
 
 export default function Project({
   title,
@@ -23,7 +31,7 @@ export default function Project({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ['0 1', '1.33 1'],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
@@ -46,7 +54,7 @@ export default function Project({
     >
       <section
         className={`bg-gradient-to-br from-transparent to-sky-100 shadow-xl max-w-[42rem] border border-black/10 rounded-lg overflow-hidden sm:pr-8 relative sm:h-auto hover:bg-gradient-to-br hover:from-transparent hover:to-slate-300 transition sm:group-even:pl-8 ${
-          isExpanded ? "h-auto" : ""
+          isExpanded ? 'h-auto' : ''
         }`}
       >
         <div className="pt-6 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
@@ -57,7 +65,7 @@ export default function Project({
           </Link>
           <div
             className={`mt-2 leading-relaxed text-gray-700 ${
-              isExpanded ? "" : "line-clamp-3"
+              isExpanded ? '' : 'line-clamp-3'
             }`}
           >
             {description}
@@ -67,12 +75,12 @@ export default function Project({
               onClick={toggleExpand}
               className="mt-2 text-sky-600 text-sm font-normal hover:underline text-left"
             >
-              {isExpanded ? "Show Less" : "Read More"}
+              {isExpanded ? 'Show Less' : 'Read More'}
             </button>
           )}
 
           <div className="flex flex-col items-left gap-1 my-2">
-            {frontend.length > 0 && (
+            {frontend && (
               <Link href={frontend} target="_blank">
                 <p className="text-base font-semibold flex items-center gap-2 text-sky-700 hover:underline">
                   <FaGithub size={16} />
@@ -81,7 +89,7 @@ export default function Project({
               </Link>
             )}
 
-            {backend.length > 0 && (
+            {backend && (
               <Link href={backend} target="_blank">
                 <p className="text-base font-semibold flex items-center gap-2 text-sky-700 hover:underline">
                   <FaGithub size={16} />
@@ -104,10 +112,10 @@ export default function Project({
 
         <Image
           src={imageUrl}
-          alt="Project I worked on"
+          alt={`${title} project`}
           quality={95}
-          width="192"
-          height="192"
+          width={192}
+          height={192}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl
           transition-transform
           duration-300
