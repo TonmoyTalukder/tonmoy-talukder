@@ -5,6 +5,7 @@ import SectionHeading from './section-heading';
 import Project from './project';
 import { useSectionInView } from '../lib/hooks';
 import { motion } from 'framer-motion';
+import { Spinner } from '@nextui-org/spinner';
 
 type ProjectData = {
   _id: string;
@@ -28,7 +29,7 @@ export default function Projects() {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          'https://tonmoy-portfolio-server.vercel.app/api/project'
+          'https://tonmoy-portfolio-server.vercel.app/api/project',
         );
         if (!response.ok) {
           throw new Error('Failed to fetch projects data');
@@ -45,7 +46,12 @@ export default function Projects() {
     fetchProjects();
   }, []);
 
-  if (loading) return <p>Loading projects...</p>;
+  if (loading)
+    return (
+      <div className="flex items-center justify-center">
+        <Spinner className="text-sky-600" size="lg" />
+      </div>
+    );
   if (error) return <p>Error: {error}</p>;
 
   return (

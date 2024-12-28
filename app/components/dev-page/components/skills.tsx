@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSectionInView } from '../lib/hooks';
 import SectionHeading from './section-heading';
+import { Spinner } from '@nextui-org/spinner';
 
 interface ISkill {
   _id?: string;
@@ -53,7 +54,11 @@ export default function Skills() {
   }, []);
 
   if (loading) {
-    return <p>Loading skills...</p>;
+    return (
+      <div className="flex items-center justify-center">
+        <Spinner className="text-sky-600" size="lg" />
+      </div>
+    );
   }
 
   if (error) {
