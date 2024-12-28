@@ -23,10 +23,12 @@ export async function generateStaticParams() {
   const response = await fetch(
     'https://tonmoy-portfolio-server.vercel.app/api/blog',
   );
-  const blogs = await response.json();
+  const blogsData = await response.json();
 
-  return blogs.map((blog: { id: string }) => ({
-    id: blog.id,
+  const blogs = blogsData?.data;
+
+  return blogs.map((blog: { _id: string }) => ({
+    id: blog._id,
   }));
 }
 
