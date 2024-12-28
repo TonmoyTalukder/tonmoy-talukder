@@ -1,10 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
+module.exports = {
+  output: 'export', // Configure export for static site
   images: {
-    unoptimized: true, 
+    unoptimized: true, // Disable image optimization in export mode
   },
-  reactStrictMode: true,
+  trailingSlash: true, // Ensure trailing slashes for GitHub Pages
 };
-
-module.exports = nextConfig;

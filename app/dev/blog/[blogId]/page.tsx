@@ -22,13 +22,13 @@ export async function generateStaticParams() {
   const response = await fetch(
     'https://tonmoy-portfolio-server.vercel.app/api/blog',
   );
-
   const blogsData = await response.json();
 
   const blogs = blogsData?.data || [];
 
+  // Generate static params for each blog post
   return blogs.map((blog: { _id: string }) => ({
-    blogId: blog._id, // Match `params.blogId`
+    blogId: blog._id,
   }));
 }
 
