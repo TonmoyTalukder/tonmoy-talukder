@@ -1,15 +1,9 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.ibb.co',
-        port: '',
-        pathname: '/X7QwZ6Y/Tonmoy-Talukder.jpg',
-      },
-    ],
+    unoptimized: true, // Required for static exports
   },
 };
 
