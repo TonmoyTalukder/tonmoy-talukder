@@ -69,7 +69,7 @@ export default function Blog({ _id, title, tags, coverImage }: BlogProps) {
 
         {/* Read Blog Button */}
         <Link
-          href={`/dev/blog/${_id}`}
+          href={`/blog/${_id}`}
           className="inline-flex items-center justify-center bg-sky-600 text-white px-5 py-2 text-sm font-medium rounded-full shadow-md hover:shadow-lg hover:bg-sky-700 transition-transform transform hover:scale-105"
         >
           Read Blog
