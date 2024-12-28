@@ -1,11 +1,14 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion'; // For animations
 import { FiTwitter, FiLinkedin, FiGithub, FiFacebook } from 'react-icons/fi'; // Social Icons
 import { FaWhatsapp } from 'react-icons/fa';
 import Prism from 'prismjs'; // Syntax highlighting for code blocks
 import 'prismjs/themes/prism.css';
+import { notFound } from 'next/navigation';
 
 type BlogData = {
   _id: string;
@@ -15,8 +18,20 @@ type BlogData = {
   text: string;
 };
 
-export default function BlogPage({ params }: { params: { id: string } }) {
-  const id = params.id;
+export async function generateStaticParams() {
+  // Fetch the list of blog IDs at build time
+  const response = await fetch(
+    'https://tonmoy-portfolio-server.vercel.app/api/blog',
+  );
+  const blogs = await response.json();
+
+  return blogs.map((blog: { id: string }) => ({
+    id: blog.id,
+  }));
+}
+
+export default function BlogPage({ params }: { params: { blogId: string } }) {
+  const id = params.blogId;
 
   const [blogData, setBlogData] = useState<BlogData | null>(null);
 
@@ -28,7 +43,10 @@ export default function BlogPage({ params }: { params: { id: string } }) {
         const response = await fetch(
           `https://tonmoy-portfolio-server.vercel.app/api/blog/${id}`,
         );
-        if (!response.ok) throw new Error('Failed to fetch blog data');
+        if (!response.ok) {
+          notFound(); // Redirect to the not-found page
+          return;
+        }
         const data = await response.json();
         let blogText = data?.data.text || '';
 
