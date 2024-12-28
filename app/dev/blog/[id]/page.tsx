@@ -2,12 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion'; // For animations
-import {
-  FiTwitter,
-  FiLinkedin,
-  FiGithub,
-  FiFacebook,
-} from 'react-icons/fi'; // Social Icons
+import { FiTwitter, FiLinkedin, FiGithub, FiFacebook } from 'react-icons/fi'; // Social Icons
 import { FaWhatsapp } from 'react-icons/fa';
 import Prism from 'prismjs'; // Syntax highlighting for code blocks
 import 'prismjs/themes/prism.css';
@@ -67,6 +62,8 @@ export default function BlogPage({ params }: { params: { id: string } }) {
   };
 
   if (!blogData) return <div>Loading...</div>;
+  if (!id) return <div>Blog ID not provided.</div>;
+  if (blogData.text === '') return <div>Blog content is not available.</div>;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 mt-16">
