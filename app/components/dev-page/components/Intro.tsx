@@ -1,19 +1,21 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare, FaCode } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { useSectionInView } from "../lib/hooks";
-import { useActiveSectionContext } from "../context/active-section-context";
-import Typed from "typed.js";
+import Image from 'next/image';
+import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { FaRegEye } from 'react-icons/fa';
+import { FaGithubSquare, FaCode } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaWhatsapp } from 'react-icons/fa';
+import { useSectionInView } from '../lib/hooks';
+import { useActiveSectionContext } from '../context/active-section-context';
+import Typed from 'typed.js';
 
 export default function Intro() {
-  const { ref } = useSectionInView("Intro", 0.5);
+  const { ref } = useSectionInView('Intro', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const el = useRef(null);
@@ -31,7 +33,7 @@ export default function Intro() {
         ],
         typeSpeed: 150,
         loop: true,
-        contentType: "html",
+        contentType: 'html',
       });
 
       return () => {
@@ -58,7 +60,7 @@ export default function Intro() {
             transition={{
               repeat: Infinity,
               duration: 8,
-              ease: "linear",
+              ease: 'linear',
             }}
           ></motion.div>
 
@@ -67,7 +69,7 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
             className="relative z-10"
@@ -101,7 +103,7 @@ export default function Intro() {
         >
           <br />
           <p className="text-center h-7">
-            <span style={{ font: "bold" }} ref={el} />
+            <span style={{ font: 'bold' }} ref={el} />
           </p>
           <br />
           <br />
@@ -113,26 +115,41 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          <Link
-            href="#contact"
-            className="group bg-sky-600 text-white px-6 py-2 flex items-center gap-2 rounded-full hover:bg-sky-700 transition"
-            // onClick={() => {
-            //   setActiveSection("Contact");
-            //   setTimeOfLastClick(Date.now());
-            // }}
-          >
-            Contact Me{" "}
-            <BsArrowRight className="opacity-80 group-hover:translate-x-1 transition" />
-          </Link>
+          {/* First Row: Contact & View Resume */}
+          <div className="flex flex-wrap gap-4 justify-center w-full sm:w-auto">
+            <Link
+              href="#contact"
+              className="group bg-gradient-to-r from-blue-500 via-sky-600 to-cyan-500 text-white px-6 py-2 flex items-center gap-2 rounded-full hover:bg-sky-700 transition"
+            >
+              Contact Me{' '}
+              <BsArrowRight className="opacity-80 group-hover:translate-x-1 transition" />
+            </Link>
 
-          <a
-            className="group bg-white text-sky-600 border-2 border-sky-600 px-6 py-2 flex items-center gap-2 rounded-full hover:bg-sky-50 transition"
-            href="/Resume of Tonmoy Talukder Full Stack Developer.pdf"
-            download
-          >
-            Download Resume{" "}
-            <HiDownload className="opacity-80 group-hover:translate-y-1 transition" />
-          </a>
+            <a
+              className="group bg-gradient-to-r from-blue-500 via-sky-600 to-cyan-500 text-white px-8 py-2 flex items-center gap-3 rounded-full shadow-lg hover:shadow-xl transition-transform duration-300"
+              href="/Resume of Tonmoy Talukder Full Stack Developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume{' '}
+              <FaRegEye
+                className="text-xl group-hover:rotate-180 transition-transform"
+                style={{ transitionDuration: '1.2s' }}
+              />
+            </a>
+          </div>
+
+          {/* Second Row: Download Resume */}
+          <div className="flex justify-center w-full">
+            <a
+              className="group bg-white text-sky-600 border-2 border-sky-600 px-6 py-2 flex items-center gap-2 rounded-full hover:bg-sky-50 transition"
+              href="/Resume of Tonmoy Talukder Full Stack Developer.pdf"
+              download
+            >
+              Download Resume{' '}
+              <HiDownload className="opacity-80 group-hover:translate-y-1 transition" />
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
@@ -176,6 +193,15 @@ export default function Intro() {
           >
             <FaXTwitter className="text-2xl" />
           </a>
+
+          <a
+            className="bg-white p-3 text-gray-600 hover:text-[#25D366] flex items-center gap-2 rounded-full hover:bg-sky-50 transition"
+            href="https://api.whatsapp.com/send?phone=8801880788228"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaWhatsapp className="text-2xl" />
+          </a>
         </motion.div>
       </div>
 
@@ -187,7 +213,7 @@ export default function Intro() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
         >
-          After completing my Bachelor of Science in{" "}
+          After completing my Bachelor of Science in{' '}
           <span className="font-medium text-sky-600">
             Computer Science and Engineering
           </span>
@@ -201,8 +227,8 @@ export default function Intro() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
         >
-          I enjoy developing <span className="font-medium">applications</span>{" "}
-          using{" "}
+          I enjoy developing <span className="font-medium">applications</span>{' '}
+          using{' '}
           <span className="font-medium text-sky-600">
             React<span className="text-black">, </span>
             Next.js<span className="text-black">, </span>
@@ -211,10 +237,10 @@ export default function Intro() {
             MongoDB
           </span>
           <span className="text-black"> or </span>
-          <span className="font-medium text-sky-600">PostgreSQL</span> mostly. With
-          strong foundations in <span className="font-medium">JavaScript</span>{" "}
-          and <span className="font-medium">Python</span>, I’m also proficient
-          in
+          <span className="font-medium text-sky-600">PostgreSQL</span> mostly.
+          With strong foundations in{' '}
+          <span className="font-medium">JavaScript</span> and{' '}
+          <span className="font-medium">Python</span>, I’m also proficient in
           <span className="font-medium"> TypeScript</span>.
         </motion.p>
         <motion.p
@@ -223,7 +249,7 @@ export default function Intro() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4 }}
         >
-          I’m currently seeking a{" "}
+          I’m currently seeking a{' '}
           <span className="font-bold text-sky-600">full-time position</span> as
           a software engineer to further refine my skills and make impactful
           contributions. Always open to learning new technologies, I’m ready to

@@ -1,30 +1,32 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { toast, Toaster } from "sonner";
-import SubmitBtn from "./submit-btn";
-import { useSectionInView } from "../lib/hooks";
-import { useForm } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+import React, { useState } from 'react';
+import SectionHeading from './section-heading';
+import { motion } from 'framer-motion';
+import { toast, Toaster } from 'sonner';
+import SubmitBtn from './submit-btn';
+import { useSectionInView } from '../lib/hooks';
+import { useForm } from 'react-hook-form';
+import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { FaWhatsapp } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 
 // Form validation schema
 const schema = yup.object().shape({
-  email: yup.string().email("Invalid email").required("Email is required"),
+  email: yup.string().email('Invalid email').required('Email is required'),
   subject: yup
     .string()
-    .min(5, "Subject must be at least 5 characters")
-    .required("Subject is required"),
+    .min(5, 'Subject must be at least 5 characters')
+    .required('Subject is required'),
   message: yup
     .string()
-    .min(10, "Message must be at least 10 characters")
-    .required("Message is required"),
+    .min(10, 'Message must be at least 10 characters')
+    .required('Message is required'),
 });
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView('Contact');
   const [loading, setLoading] = useState(false);
   const [showToaster, setShowToaster] = useState(false);
 
@@ -48,27 +50,30 @@ export default function Contact() {
     // console.log(data2);
 
     try {
-        const response = await fetch("https://portfolio-email-server.vercel.app/send-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+      const response = await fetch(
+        'https://portfolio-email-server.vercel.app/send-email',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data),
-          mode: "cors", // explicitly enable CORS mode
-        });
+          mode: 'cors', // explicitly enable CORS mode
+        },
+      );
 
       if (response.ok) {
-        toast.success("Message sent successfully!");
+        toast.success('Message sent successfully!');
         window.scrollTo({
           top: 0,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
-        window.location.hash = "";
+        window.location.hash = '';
         reset();
       } else {
-        toast.error("Failed to send message. Please try again.");
+        toast.error('Failed to send message. Please try again.');
       }
     } catch (error) {
-      toast.error("Something went wrong.");
-      console.log("Error => ", error);
+      toast.error('Something went wrong.');
+      console.log('Error => ', error);
     } finally {
       setLoading(false);
       setTimeout(() => setShowToaster(false), 3000);
@@ -89,13 +94,37 @@ export default function Contact() {
       <SectionHeading>Contact Me</SectionHeading>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-6 mt-6 p-6 bg-transparent rounded-lg shadow-lg"
+        className="flex flex-col gap-6 mt-0 p-6 bg-transparent rounded-lg shadow-lg"
       >
+        <div className="my-3 p-3 bg-transparent flex flex-col items-center">
+          <div className="flex flex-col space-y-2">
+            <a
+              className="flex justify-center items-center gap-2 text-gray-600 hover:text-[#25D366] bg-white px-4 py-2 rounded-lg shadow-sm border hover:shadow-md transition duration-300"
+              href="https://api.whatsapp.com/send?phone=8801880788228"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp className="text-xl" />
+              <span>+880 1880-788228</span>
+            </a>
+            <a
+              className="flex justify-center items-center gap-2 text-gray-600 hover:text-[#D44638] bg-white px-4 py-2 rounded-lg shadow-sm border hover:shadow-md transition duration-300"
+              href="mailto:tonmoytalukder2000@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiGmail className="text-xl" />
+              <span>tonmoytalukder2000@gmail.com</span>
+            </a>
+
+            <p className="text-gray-600">Or, write here</p>
+          </div>
+        </div>
         <div>
           <input
             type="email"
             placeholder="Your email"
-            {...register("email")}
+            {...register('email')}
             className="w-full p-3 border border-gray-300 rounded-md outline-none focus:border-slate-500 transition-all"
           />
           {errors.email && (
@@ -106,7 +135,7 @@ export default function Contact() {
           <input
             type="text"
             placeholder="Subject"
-            {...register("subject")}
+            {...register('subject')}
             className="w-full p-3 border border-gray-300 rounded-md outline-none focus:border-slate-500 transition-all"
           />
           {errors.subject && (
@@ -116,7 +145,7 @@ export default function Contact() {
         <div>
           <textarea
             placeholder="Your message"
-            {...register("message")}
+            {...register('message')}
             className="w-full p-3 border border-gray-300 rounded-md outline-none focus:border-slate-500 transition-all h-32"
           />
           {errors.message && (
