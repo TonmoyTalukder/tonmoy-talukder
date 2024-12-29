@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { FiTwitter, FiLinkedin, FiGithub, FiFacebook } from 'react-icons/fi'; // Social Icons
 import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // For animations
-
+import Prism from 'prismjs'; // Syntax highlighting for code blocks
+import 'prismjs/themes/prism.css';
 interface SingleBlogProps {
   blogId: string;
 }
@@ -21,6 +22,20 @@ interface BlogData {
 const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
   const [blogData, setBlogData] = useState<BlogData | null>(null);
 
+  const addLineGapsToParagraphs = (html: string): string => {
+    // Add one or two line breaks after every <p>...</p> tag
+    return html.replace(
+      /<\/p>/g,
+      `</p><div
+  style="
+    padding-top: 5px;
+    height: 10px;
+    width: 10px;
+  "
+></div>`,
+    );
+  };
+
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
@@ -29,7 +44,13 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
         );
         if (response.ok) {
           const data = await response.json();
-          setBlogData(data?.data);
+
+          let blogText = data?.data.text || '';
+
+          // Add line gaps after every <p>...</p> tag
+          blogText = addLineGapsToParagraphs(blogText);
+
+          setBlogData({ ...data?.data, text: blogText });
         } else {
           console.error('Failed to fetch blog data');
         }
@@ -42,7 +63,7 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
   }, [blogId]);
 
   if (!blogData) {
-    return <div className='mt-14'>Loading...</div>;
+    return <div className="mt-14">Loading...</div>;
   }
 
   return (
