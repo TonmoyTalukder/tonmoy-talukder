@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
 import { FiTwitter, FiLinkedin, FiGithub, FiFacebook } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -92,9 +93,19 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
         alignItems: 'center',
       }}
     >
+      {/* Metadata */}
+      <Head>
+        <title>{blogData.title}</title>
+        <meta name="description" content={`Read this blog about ${blogData.tags.join(', ')}`} />
+        <meta name="keywords" content={blogData.tags.join(', ')} />
+        <meta property="og:title" content={blogData.title} />
+        <meta property="og:image" content={blogData.coverImage} />
+        <meta property="og:description" content={`Learn about ${blogData.tags.join(', ')}`} />
+      </Head>
+
       {/* Hero Section */}
       <motion.div
-        className="relative max-w-full-md w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg overflow-hidden mb-8 mx-auto"
+        className="relative max-w-full-md w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg overflow-hidden my-8 mx-auto"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
