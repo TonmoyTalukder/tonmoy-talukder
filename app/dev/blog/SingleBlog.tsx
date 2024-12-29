@@ -1,12 +1,10 @@
-// app/dev/blog/SingleBlog.tsx
 'use client';
 
 import React, { useEffect, useState } from 'react';
 import { FiTwitter, FiLinkedin, FiGithub, FiFacebook } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism.css';
+import { CodeSnippet } from '@/app/components/dev-page/components/CodeSnippet';
 
 interface SingleBlogProps {
   blogId: string;
@@ -23,6 +21,38 @@ interface BlogData {
 const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
   const [blogData, setBlogData] = useState<BlogData | null>(null);
 
+  const addLineGapsToParagraphs = (html: string): string => {
+    return html.replace(
+      /<\/p>/g,
+      `</p><div style="padding-top: 5px; height: 10px; width: 10px;"></div>`,
+    );
+  };
+
+  const parseBlogContent = (html: string) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const elements: React.ReactNode[] = [];
+
+    doc.body.childNodes.forEach((node) => {
+      if (node.nodeName === 'PRE' && node.firstChild?.nodeName === 'CODE') {
+        const code = node.textContent || '';
+        elements.push(<CodeSnippet key={elements.length} code={code} />);
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const element = node as Element;
+        elements.push(
+          <div
+            key={elements.length}
+            dangerouslySetInnerHTML={{ __html: element.outerHTML }}
+          ></div>,
+        );
+      } else if (node.nodeType === Node.TEXT_NODE) {
+        elements.push(<div key={elements.length}>{node.textContent}</div>);
+      }
+    });
+
+    return elements;
+  };
+
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
@@ -31,7 +61,11 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
         );
         if (response.ok) {
           const data = await response.json();
-          setBlogData(data?.data);
+
+          let blogText = data?.data.text || '';
+          blogText = addLineGapsToParagraphs(blogText);
+
+          setBlogData({ ...data?.data, text: blogText });
         } else {
           console.error('Failed to fetch blog data');
         }
@@ -48,10 +82,19 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 mt-16">
+    <div
+      className="mt-16 px-4 md:px-8"
+      style={{
+        height: '100%',
+        maxWidth: '95%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       {/* Hero Section */}
       <motion.div
-        className="relative h-64 md:h-80 lg:h-96 rounded-lg shadow-lg overflow-hidden mb-8"
+        className="relative max-w-full-md w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg overflow-hidden mb-8 mx-auto"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -72,7 +115,7 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
         {blogData.tags.map((tag) => (
           <span
             key={tag}
-            className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium"
+            className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium hover:bg-blue-200 transition"
           >
             #{tag}
           </span>
@@ -81,100 +124,136 @@ const SingleBlog: React.FC<SingleBlogProps> = ({ blogId }) => {
 
       {/* Content Section */}
       <motion.article
-        className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl"
+        className="w-full max-w-screen-md prose prose-sm sm:prose md:prose-lg lg:prose-xl"
+        style={{
+          overflowWrap: 'break-word',
+          whiteSpace: 'normal',
+        }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div dangerouslySetInnerHTML={{ __html: blogData.text }}></div>
+        {/* <div
+          dangerouslySetInnerHTML={{
+            __html: blogData.text,
+          }}
+          style={{
+            width: '100%',
+          }}
+        ></div> */}
+        {parseBlogContent(blogData.text)}
+        {/* <style jsx>{`
+          pre {
+            background-color: #f4f4f4;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+          }
+          code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(27, 31, 35, 0.05);
+            padding: 2px 4px;
+            border-radius: 4px;
+          }
+        `}</style> */}
       </motion.article>
 
-      {/* Social Share */}
-      <div className="fixed top-1/3 left-4 hidden lg:flex flex-col gap-4">
+      {/* Social Share - Fixed for Larger Screens */}
+      <div className="hidden lg:flex lg:flex-col fixed top-1/3 left-4 gap-4">
         {[
           {
             href: `https://twitter.com/intent/tweet?text=${blogData.title}&url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
-            icon: <FiTwitter size={24} />,
-            color: 'text-blue-500 hover:text-blue-700',
-          },
-          {
-            href: `https://www.linkedin.com/sharing/share-offsite/?url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
-            icon: <FiLinkedin size={24} />,
-            color: 'text-blue-700 hover:text-blue-900',
-          },
-          {
-            href: `https://www.facebook.com/sharer/sharer.php?u=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
-            icon: <FiFacebook size={24} />,
-            color: 'text-blue-600 hover:text-blue-800',
-          },
-          {
-            href: `https://api.whatsapp.com/send?text=${blogData.title}&url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
-            icon: <FaWhatsapp size={24} />,
-            color: 'text-green-500 hover:text-green-700',
-          },
-          {
-            href: `https://github.com/TonmoyTalukder`,
-            icon: <FiGithub size={24} />,
-            color: 'text-gray-600 hover:text-black',
-          },
-        ].map(({ href, icon, color }, index) => (
-          <a
-            key={index}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${color} transition`}
-          >
-            {icon}
-          </a>
-        ))}
-      </div>
-
-      {/* Mobile Social Share */}
-      <div className="fixed top-1/3 left-4 hidden lg:flex flex-col gap-4">
-        {[
-          {
             Icon: FiTwitter,
-            href: `https://twitter.com/intent/tweet?text=${blogData.title}&url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
             color: 'text-blue-500 hover:text-blue-700',
             label: 'Share on Twitter',
           },
           {
-            Icon: FiLinkedin,
             href: `https://www.linkedin.com/sharing/share-offsite/?url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+            Icon: FiLinkedin,
             color: 'text-blue-700 hover:text-blue-900',
             label: 'Share on LinkedIn',
           },
           {
-            Icon: FiFacebook,
             href: `https://www.facebook.com/sharer/sharer.php?u=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+            Icon: FiFacebook,
             color: 'text-blue-600 hover:text-blue-800',
             label: 'Share on Facebook',
           },
           {
-            Icon: FaWhatsapp,
             href: `https://api.whatsapp.com/send?text=${blogData.title}&url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+            Icon: FaWhatsapp,
             color: 'text-green-500 hover:text-green-700',
             label: 'Share on WhatsApp',
           },
           {
-            Icon: FiGithub,
             href: `https://github.com/TonmoyTalukder`,
+            Icon: FiGithub,
             color: 'text-gray-600 hover:text-black',
             label: 'Visit GitHub',
           },
-        ].map(({ Icon, href, color, label }, index) => (
+        ].map(({ href, Icon, color, label }, index) => (
           <a
             key={index}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className={`${color} p-2 rounded-full hover:shadow-lg transition`}
+            className={`${color} p-2 rounded-full hover:shadow-md transition`}
           >
-            <Icon size={32} />
+            <Icon size={28} />
           </a>
         ))}
+      </div>
+
+      {/* Social Share - At Footer for Smaller and Medium Screens */}
+      <div className="my-12 md:my-16">
+        <h2 className="text-center text-xl font-semibold mb-4">Share</h2>
+        <div className="flex justify-center gap-4">
+          {[
+            {
+              href: `https://twitter.com/intent/tweet?text=${blogData.title}&url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+              Icon: FiTwitter,
+              color: 'text-blue-500 hover:text-blue-700',
+              label: 'Share on Twitter',
+            },
+            {
+              href: `https://www.linkedin.com/sharing/share-offsite/?url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+              Icon: FiLinkedin,
+              color: 'text-blue-700 hover:text-blue-900',
+              label: 'Share on LinkedIn',
+            },
+            {
+              href: `https://www.facebook.com/sharer/sharer.php?u=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+              Icon: FiFacebook,
+              color: 'text-blue-600 hover:text-blue-800',
+              label: 'Share on Facebook',
+            },
+            {
+              href: `https://api.whatsapp.com/send?text=${blogData.title}&url=https://tonmoytalukder.github.io/dev/blog/${blogData._id}`,
+              Icon: FaWhatsapp,
+              color: 'text-green-500 hover:text-green-700',
+              label: 'Share on WhatsApp',
+            },
+            {
+              href: `https://github.com/TonmoyTalukder`,
+              Icon: FiGithub,
+              color: 'text-gray-600 hover:text-black',
+              label: 'Visit GitHub',
+            },
+          ].map(({ href, Icon, color, label }, index) => (
+            <a
+              key={index}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className={`${color} p-2 rounded-full hover:shadow-md transition`}
+            >
+              <Icon size={28} />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

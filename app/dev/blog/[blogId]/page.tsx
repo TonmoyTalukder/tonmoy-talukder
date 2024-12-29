@@ -31,10 +31,10 @@ export async function generateStaticParams() {
 
   const blogs: BlogData[] = blogsData?.data || [];
 
-  console.log(
-    'return arrary = ',
-    blogs.map((blog) => ({ blogId: blog._id })),
-  );
+  // console.log(
+  //   'return arrary = ',
+  //   blogs.map((blog) => ({ blogId: blog._id })),
+  // );
 
   // return [{ blogId: '1' }, { blogId: '2' }];
   return blogs.map((blog) => ({ blogId: blog._id }));
