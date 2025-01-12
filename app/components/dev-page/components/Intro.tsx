@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
@@ -17,6 +17,7 @@ import Typed from 'typed.js';
 export default function Intro() {
   const { ref } = useSectionInView('Intro', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [solvedProblems, setSolvedProblems] = useState<number | null>(null);
 
   const el = useRef(null);
 
@@ -41,6 +42,18 @@ export default function Intro() {
         typed.destroy();
       };
     }
+  }, []);
+
+  useEffect(() => {
+    // Fetch solved problems data
+    fetch('https://alfa-leetcode-api.onrender.com/zishnav/solved')
+      .then((res) => res.json())
+      .then((data) => {
+        setSolvedProblems(data.solvedProblem);
+      })
+      .catch((error) =>
+        console.error('Error fetching solved problems:', error),
+      );
   }, []);
 
   return (
@@ -153,7 +166,7 @@ export default function Intro() {
         </motion.div>
 
         <motion.div
-          className="flex flex-wrap gap-4 mt-6 px-4 justify-center"
+          className="flex flex-wrap gap-1 mt-6 px-0 justify-center"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -183,6 +196,11 @@ export default function Intro() {
             rel="noreferrer"
           >
             <FaCode className="text-2xl" />
+            {solvedProblems !== null ? (
+              <span>{solvedProblems}</span>
+            ) : (
+              <span>..</span>
+            )}
           </a>
 
           <a
