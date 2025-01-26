@@ -64,7 +64,7 @@ export default function Project({
             </h3>
           </Link>
           <div
-            className={`mt-2 leading-relaxed text-gray-700 ${
+            className={`mt-2 leading-relaxed text-gray-700 text-justify ${
               isExpanded ? '' : 'line-clamp-3'
             }`}
           >

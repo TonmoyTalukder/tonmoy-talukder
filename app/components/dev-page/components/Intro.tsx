@@ -140,7 +140,7 @@ export default function Intro() {
 
             <a
               className="group bg-gradient-to-r from-blue-500 via-sky-600 to-cyan-500 text-white px-8 py-2 flex items-center gap-3 rounded-full shadow-lg hover:shadow-xl transition-transform duration-300"
-              href="/Resume of Tonmoy Talukder Full Stack Developer.pdf"
+              href="/Tonmoy Talukder_Full Stack Developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -156,7 +156,7 @@ export default function Intro() {
           <div className="flex justify-center w-full">
             <a
               className="group bg-white text-sky-600 border-2 border-sky-600 px-6 py-2 flex items-center gap-2 rounded-full hover:bg-sky-50 transition"
-              href="/Resume of Tonmoy Talukder Full Stack Developer.pdf"
+              href="/Tonmoy Talukder_Full Stack Developer.pdf"
               download
             >
               Download Resume{' '}
