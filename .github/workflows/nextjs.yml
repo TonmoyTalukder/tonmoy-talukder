@@ -79,10 +79,15 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Check output directory
         run: ls -la out
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: out
+          name: github-pages  # Ensure this matches in deploy step
+
+      - name: Check uploaded artifacts
+        run: ls -la ${{ runner.temp }}/github-pages
 
   # Deployment job
   deploy:
