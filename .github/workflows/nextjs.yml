@@ -77,17 +77,27 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
-      - name: Check output directory
-        run: ls -la out
+
+      - name: Build and Export Next.js
+        run: npm run build && npm run export
+
+      - name: Debug output directory
+        run: ls -la out  # This should show the exported files
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
-          name: github-pages  # Ensure this matches in deploy step
+          path: out  # Ensure this matches `next export` output
+          name: github-pages  # Ensure this matches the deploy step
 
       - name: Check uploaded artifacts
-        run: ls -la ${{ runner.temp }}/github-pages
+        run: ls -la ${{ runner.temp }}/github-pages  # Debug if artifact is stored correctly
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          artifact_name: github-pages  # Must match upload step
 
   # Deployment job
   deploy:
