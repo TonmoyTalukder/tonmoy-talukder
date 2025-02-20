@@ -64,8 +64,9 @@ jobs:
           ls -la out  # Debugging step to check exported files
 
       - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: out
 
       - name: Deploy to GitHub Pages
