@@ -16,7 +16,13 @@ const Recent = () => {
             <div>
             <ul style={{listStyleType: "none"}}>
                 <li className='py-2'>
-                  <p className="text-justify"><span className="text-sm font-semibold">[December, 2023]</span> I have <span style={{color: 'blue'}}>joined</span> <span className="text-sky-600 hover:text-orange-400 hover:underline"><a href="https://bd.linkedin.com/company/research-hub-21" target="_blank" rel="noreferrer">Reseach Hub.Inc</a></span> as a <bold className="font-medium">Research Engineer</bold> on a contractual basis.</p>
+                  <p className="text-justify"><span className="text-sm font-semibold">[February, 2025]</span> I have <span style={{color: 'blue'}}>joined</span> <span className="text-sky-600 hover:text-orange-400 hover:underline"><a href="https://worldtechsoft.com/" target="_blank" rel="noreferrer">WorldTech</a></span> as a <bold className="font-medium">Software Engineer</bold>.</p>
+                </li>
+                <li className='py-2'>
+                  <p className="text-justify"><span className="text-sm font-semibold">[July, 2024]</span> I have <span style={{color: 'orange'}}>left</span> <span className="text-sky-600 hover:text-orange-400 hover:underline"><a href="https://bd.linkedin.com/company/research-hub-21" target="_blank" rel="noreferrer">Reseach Hub.Inc</a></span>.</p>
+                </li>
+                <li className='py-2'>
+                  <p className="text-justify"><span className="text-sm font-semibold">[February, 2024]</span> I have <span style={{color: 'blue'}}>joined</span> <span className="text-sky-600 hover:text-orange-400 hover:underline"><a href="https://bd.linkedin.com/company/research-hub-21" target="_blank" rel="noreferrer">Reseach Hub.Inc</a></span> as a <bold className="font-medium">Research Engineer</bold> on a contractual basis.</p>
                 </li>
                 <li className='py-2'>
                   <p className="text-justify"><span className="text-sm font-semibold">[September, 2023]</span> One Paper <span style={{color: 'green'}}>published</span> at <span className="italic ">
